@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4322F9776400D07E2E /* AppDelegate.swift */; };
-		48F52E4622F9776400D07E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4522F9776400D07E2E /* ViewController.swift */; };
-		48F52E4922F9776400D07E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4722F9776400D07E2E /* Main.storyboard */; };
 		48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4A22F9776400D07E2E /* Taileur.xcdatamodeld */; };
 		48F52E4E22F9776600D07E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4D22F9776600D07E2E /* Assets.xcassets */; };
 		48F52E5122F9776600D07E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4F22F9776600D07E2E /* LaunchScreen.storyboard */; };
@@ -37,8 +35,6 @@
 /* Begin PBXFileReference section */
 		48F52E4022F9776400D07E2E /* Taileur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taileur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E4322F9776400D07E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48F52E4522F9776400D07E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		48F52E4822F9776400D07E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48F52E4B22F9776400D07E2E /* Taileur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taileur.xcdatamodel; sourceTree = "<group>"; };
 		48F52E4D22F9776600D07E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48F52E5022F9776600D07E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				48F52E4322F9776400D07E2E /* AppDelegate.swift */,
-				48F52E4522F9776400D07E2E /* ViewController.swift */,
-				48F52E4722F9776400D07E2E /* Main.storyboard */,
 				48F52E4D22F9776600D07E2E /* Assets.xcassets */,
 				48F52E4F22F9776600D07E2E /* LaunchScreen.storyboard */,
 				48F52E5222F9776600D07E2E /* Info.plist */,
@@ -234,7 +228,6 @@
 			files = (
 				48F52E5122F9776600D07E2E /* LaunchScreen.storyboard in Resources */,
 				48F52E4E22F9776600D07E2E /* Assets.xcassets in Resources */,
-				48F52E4922F9776400D07E2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48F52E4622F9776400D07E2E /* ViewController.swift in Sources */,
 				48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */,
 				48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */,
 			);
@@ -297,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		48F52E4722F9776400D07E2E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48F52E4822F9776400D07E2E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		48F52E4F22F9776600D07E2E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,7 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N99R38R7F8;
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
 				INFOPLIST_FILE = Taileur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N99R38R7F8;
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
 				INFOPLIST_FILE = Taileur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
