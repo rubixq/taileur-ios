@@ -12,6 +12,7 @@
 		4804B26923165D9B00247511 /* UIViewcontroller+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26823165D9B00247511 /* UIViewcontroller+Extensions.swift */; };
 		4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26A23165E4100247511 /* UIView+Extensions.swift */; };
 		4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26C2316666500247511 /* AutoConstrainExtension.swift */; };
+		4804B26F2316727900247511 /* JoinNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26E2316727900247511 /* JoinNowViewController.swift */; };
 		48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4322F9776400D07E2E /* AppDelegate.swift */; };
 		48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4A22F9776400D07E2E /* Taileur.xcdatamodeld */; };
 		48F52E4E22F9776600D07E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4D22F9776600D07E2E /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		4804B26823165D9B00247511 /* UIViewcontroller+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+Extensions.swift"; sourceTree = "<group>"; };
 		4804B26A23165E4100247511 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4804B26C2316666500247511 /* AutoConstrainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoConstrainExtension.swift; sourceTree = "<group>"; };
+		4804B26E2316727900247511 /* JoinNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowViewController.swift; sourceTree = "<group>"; };
 		48F52E4022F9776400D07E2E /* Taileur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taileur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E4322F9776400D07E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52E4B22F9776400D07E2E /* Taileur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taileur.xcdatamodel; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				4804B26323165C3B00247511 /* LaunchViewController.swift */,
+				4804B26E2316727900247511 /* JoinNowViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */,
+				4804B26F2316727900247511 /* JoinNowViewController.swift in Sources */,
 				4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */,
 				48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */,
 				4804B26423165C3B00247511 /* LaunchViewController.swift in Sources */,

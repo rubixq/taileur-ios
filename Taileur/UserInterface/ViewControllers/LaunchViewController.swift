@@ -17,14 +17,41 @@ class LaunchViewController: UIViewController {
         super.viewDidLoad()
 			  hideNavigationBar
         mainView = LauncherUIView()
-      
+			  mainView.delegate = self
     }
-    
+	
+	
+	override func viewDidAppear(_ animated: Bool) {
+			mainView.timer.fire()
+	}
+	override func viewWillAppear(_ animated: Bool) {
+		//mainView.timer.fire()
+	}
+	
+	override func viewDidDisappear(_ animated: Bool) {
+	//	mainView.timer.invalidate()
 
+	}
+	override func viewWillDisappear(_ animated: Bool) {
+	//	mainView.timer.invalidate()
+	}
+	
 	override func viewDidLayoutSubviews() {
 		       view.addSubview(mainView)
-		       mainView.constrainToSuperView(on: self.view)
+		       mainView.constrainToSuperViewNoGuide(on: self.view)
 	}
 
 
+}
+
+extension LaunchViewController: LauncherUIViewProtocol {
+	func joinNow() {
+		self.navigationController?.show(JoinNowViewController(), sender: self)
+	}
+	
+	func explore() {
+		
+	}
+	
+	
 }

@@ -27,6 +27,14 @@ extension UIView{
 		self.topAnchor.constraint(equalTo: onview.topAnchor,constant: topAnchor).isActive = true
 	}
 	
+	func constrainToSuperViewNoGuide(on view : UIView){
+		//let guide = view.safeAreaLayoutGuide
+		self.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+		self.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+		self.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+		self.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+		
+	}
 	func constrainToSuperView(on view : UIView){
 		let guide = view.safeAreaLayoutGuide
 		self.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true

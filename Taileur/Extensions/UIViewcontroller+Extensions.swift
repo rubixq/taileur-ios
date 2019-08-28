@@ -15,5 +15,13 @@ extension UIViewController {
 		self.navigationController?.navigationBar.isHidden = true 
 		return
 	}
+
+	
+	func actionSheets(title: String = "" ,message : String = "") {
+			let  ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+		
+		
+	}
 	
 }
+

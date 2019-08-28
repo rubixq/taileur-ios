@@ -10,6 +10,9 @@ import UIKit
 
 extension UIView {
 	
+	var heavyTitleFont : UIFont {
+		return UIFont.init(name: ".SFUIDisplay-Heavy", size: 30) ?? UIFont.systemFont(ofSize: 20)
+	}
 	var bigTitleFont : UIFont {
 		return UIFont.init(name: ".SFUIDisplay-Bold", size: 30) ?? UIFont.systemFont(ofSize: 20)
 	}
@@ -18,7 +21,7 @@ extension UIView {
 	}
 	
 	var regularBoldFont : UIFont {
-		return UIFont.init(name: ".SFUIDisplay-Bold", size: 18) ?? UIFont.systemFont(ofSize: 18)
+		return UIFont.init(name: ".SFUIDisplay-Bold", size: 16) ?? UIFont.systemFont(ofSize: 16)
 	}
 	
 	var regularButtonFont : UIFont {
