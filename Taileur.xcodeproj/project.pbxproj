@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4804B26423165C3B00247511 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26323165C3B00247511 /* LaunchViewController.swift */; };
+		4804B26623165CEB00247511 /* LauncherUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26523165CEB00247511 /* LauncherUIView.swift */; };
+		4804B26923165D9B00247511 /* UIViewcontroller+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26823165D9B00247511 /* UIViewcontroller+Extensions.swift */; };
+		4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26A23165E4100247511 /* UIView+Extensions.swift */; };
+		4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26C2316666500247511 /* AutoConstrainExtension.swift */; };
 		48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4322F9776400D07E2E /* AppDelegate.swift */; };
 		48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4A22F9776400D07E2E /* Taileur.xcdatamodeld */; };
 		48F52E4E22F9776600D07E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4D22F9776600D07E2E /* Assets.xcassets */; };
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4804B26323165C3B00247511 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		4804B26523165CEB00247511 /* LauncherUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherUIView.swift; sourceTree = "<group>"; };
+		4804B26823165D9B00247511 /* UIViewcontroller+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+Extensions.swift"; sourceTree = "<group>"; };
+		4804B26A23165E4100247511 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		4804B26C2316666500247511 /* AutoConstrainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoConstrainExtension.swift; sourceTree = "<group>"; };
 		48F52E4022F9776400D07E2E /* Taileur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taileur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E4322F9776400D07E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52E4B22F9776400D07E2E /* Taileur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taileur.xcdatamodel; sourceTree = "<group>"; };
@@ -72,6 +82,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4804B26023165AFF00247511 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				4804B26223165B1600247511 /* ViewControllers */,
+				4804B26123165B0A00247511 /* Components */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		4804B26123165B0A00247511 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4804B26523165CEB00247511 /* LauncherUIView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4804B26223165B1600247511 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4804B26323165C3B00247511 /* LaunchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4804B26723165D8700247511 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4804B26823165D9B00247511 /* UIViewcontroller+Extensions.swift */,
+				4804B26A23165E4100247511 /* UIView+Extensions.swift */,
+				4804B26C2316666500247511 /* AutoConstrainExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		48F52E3722F9776400D07E2E = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +140,8 @@
 		48F52E4222F9776400D07E2E /* Taileur */ = {
 			isa = PBXGroup;
 			children = (
+				4804B26723165D8700247511 /* Extensions */,
+				4804B26023165AFF00247511 /* UserInterface */,
 				48F52E4322F9776400D07E2E /* AppDelegate.swift */,
 				48F52E4D22F9776600D07E2E /* Assets.xcassets */,
 				48F52E4F22F9776600D07E2E /* LaunchScreen.storyboard */,
@@ -252,8 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */,
+				4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */,
 				48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */,
+				4804B26423165C3B00247511 /* LaunchViewController.swift in Sources */,
+				4804B26623165CEB00247511 /* LauncherUIView.swift in Sources */,
 				48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */,
+				4804B26923165D9B00247511 /* UIViewcontroller+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
