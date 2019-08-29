@@ -16,6 +16,10 @@
 		485CE4172317AEB100AB2CFB /* BottomSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4162317AEB100AB2CFB /* BottomSliderViewController.swift */; };
 		485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4192317AEEA00AB2CFB /* GenericTableView.swift */; };
 		485CE41C2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE41B2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift */; };
+		485CE41F2317C4C900AB2CFB /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE41E2317C4C900AB2CFB /* OnBoardingViewController.swift */; };
+		485CE4212317C4DD00AB2CFB /* LoginUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4202317C4DD00AB2CFB /* LoginUIView.swift */; };
+		485CE4232317C4ED00AB2CFB /* RegisterUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4222317C4ED00AB2CFB /* RegisterUIView.swift */; };
+		485CE4252317C50900AB2CFB /* OTPUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4242317C50900AB2CFB /* OTPUIView.swift */; };
 		48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4322F9776400D07E2E /* AppDelegate.swift */; };
 		48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4A22F9776400D07E2E /* Taileur.xcdatamodeld */; };
 		48F52E4E22F9776600D07E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4D22F9776600D07E2E /* Assets.xcassets */; };
@@ -58,6 +62,10 @@
 		485CE4162317AEB100AB2CFB /* BottomSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSliderViewController.swift; sourceTree = "<group>"; };
 		485CE4192317AEEA00AB2CFB /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
 		485CE41B2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewsTableViewCell.swift; sourceTree = "<group>"; };
+		485CE41E2317C4C900AB2CFB /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		485CE4202317C4DD00AB2CFB /* LoginUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIView.swift; sourceTree = "<group>"; };
+		485CE4222317C4ED00AB2CFB /* RegisterUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUIView.swift; sourceTree = "<group>"; };
+		485CE4242317C50900AB2CFB /* OTPUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPUIView.swift; sourceTree = "<group>"; };
 		48F52E4022F9776400D07E2E /* Taileur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taileur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E4322F9776400D07E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52E4B22F9776400D07E2E /* Taileur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taileur.xcdatamodel; sourceTree = "<group>"; };
@@ -117,6 +125,7 @@
 		4804B26123165B0A00247511 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				485CE41D2317C48600AB2CFB /* OnBoardingController */,
 				485CE4152317AE9300AB2CFB /* BottomSliderComponent */,
 				485CE4142317ADD500AB2CFB /* LaunchComponent */,
 			);
@@ -165,6 +174,17 @@
 				485CE41B2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift */,
 			);
 			path = GenericViews;
+			sourceTree = "<group>";
+		};
+		485CE41D2317C48600AB2CFB /* OnBoardingController */ = {
+			isa = PBXGroup;
+			children = (
+				485CE41E2317C4C900AB2CFB /* OnBoardingViewController.swift */,
+				485CE4202317C4DD00AB2CFB /* LoginUIView.swift */,
+				485CE4222317C4ED00AB2CFB /* RegisterUIView.swift */,
+				485CE4242317C50900AB2CFB /* OTPUIView.swift */,
+			);
+			path = OnBoardingController;
 			sourceTree = "<group>";
 		};
 		48F52E3722F9776400D07E2E = {
@@ -456,13 +476,17 @@
 			files = (
 				4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */,
 				4804B26F2316727900247511 /* JoinNowViewController.swift in Sources */,
+				485CE4252317C50900AB2CFB /* OTPUIView.swift in Sources */,
 				4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */,
+				485CE4232317C4ED00AB2CFB /* RegisterUIView.swift in Sources */,
+				485CE41F2317C4C900AB2CFB /* OnBoardingViewController.swift in Sources */,
 				48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */,
 				4804B26423165C3B00247511 /* LaunchViewController.swift in Sources */,
 				485CE41C2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift in Sources */,
 				485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */,
 				4804B26623165CEB00247511 /* LauncherUIView.swift in Sources */,
 				48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */,
+				485CE4212317C4DD00AB2CFB /* LoginUIView.swift in Sources */,
 				4804B26923165D9B00247511 /* UIViewcontroller+Extensions.swift in Sources */,
 				485CE4172317AEB100AB2CFB /* BottomSliderViewController.swift in Sources */,
 			);

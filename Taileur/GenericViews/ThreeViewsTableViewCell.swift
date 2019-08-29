@@ -67,7 +67,7 @@ class ThreeViewsTableViewCell: UITableViewCell {
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.font =  setFont(name: ".SFUIDisplay-Thin", size: 16)
 		label.textAlignment = .left
-  //  label.textColor = UIColor.lightGray
+   label.textColor = UIColor.gray
 		label.text = "Ghana"
 		return label
 	}()
