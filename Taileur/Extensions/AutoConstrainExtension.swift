@@ -21,7 +21,7 @@ extension UIView{
 		self.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 	}
 	
-	
+
 	
 	func setTopAnchor(onview : UIView,topAnchor : CGFloat)  {
 		self.topAnchor.constraint(equalTo: onview.topAnchor,constant: topAnchor).isActive = true
@@ -35,6 +35,15 @@ extension UIView{
 		self.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
 		
 	}
+	func constrainToBelowView(below view : UIView){
+		let guide = view.safeAreaLayoutGuide
+		self.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
+		self.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
+		self.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true
+		self.topAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+		
+	}
+	
 	func constrainToSuperView(on view : UIView){
 		let guide = view.safeAreaLayoutGuide
 		self.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true

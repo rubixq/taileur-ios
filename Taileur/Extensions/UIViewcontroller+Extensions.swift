@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FloatingPanel
 
 extension UIViewController {
 	
@@ -16,11 +16,17 @@ extension UIViewController {
 		return
 	}
 
+
 	
-	func actionSheets(title: String = "" ,message : String = "") {
-			let  ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
-		
-		
+	func showBottomSheet(delegate : BottomSliderViewControllerProtocol?){
+		let fpc = FloatingPanelController()
+		let contentVC = BottomSliderViewController()
+		if delegate != nil {
+			contentVC.delegate = delegate
+		}
+		fpc.set(contentViewController: contentVC)
+		fpc.isRemovalInteractionEnabled = true // Optional: Let it removable by a swipe-down
+		self.present(fpc, animated: true, completion: nil)
 	}
 	
 }

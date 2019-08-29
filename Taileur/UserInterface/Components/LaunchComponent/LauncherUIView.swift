@@ -52,8 +52,8 @@ class LauncherUIView: UIView {
 		
 		joinButton.constrainBelowView(below: labelStack,topSpace: 30)
 		joinButton.centerVerticalToView(coverImageView)
-		joinButton.setWithAnchor(230)
-		joinButton.setHeightAnchor(48)
+		joinButton.setWithAnchor(250)
+		joinButton.setHeightAnchor(55)
 		
 		descriptionLabel.constrainBelowView(below: joinButton,topSpace: 30)
 		descriptionLabel.centerVerticalToView(coverImageView)
@@ -104,15 +104,19 @@ class LauncherUIView: UIView {
 	}()
 	
 	
-	lazy var descriptionLabel: UILabel = {
-		let label = UILabel()
-		label.translatesAutoresizingMaskIntoConstraints = false
-		label.text = "JUST EXPORE"
-		label.textColor = .white
-		label.font = regularBoldFont
-		label.textAlignment = .center
-		label.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(exploreAction)))
-		return label
+	lazy var descriptionLabel: UIButton = {
+		let button = UIButton()
+		button.translatesAutoresizingMaskIntoConstraints = false
+		button.setTitle( "JUST EXPORE", for: .normal)
+		button.setTitleColor(.white, for: .normal)
+	//	label.textColor = .white
+		//label.font = regularBoldFont
+		button.titleLabel?.textAlignment = .center
+		button.isUserInteractionEnabled = true
+		button.addTarget(self, action: #selector(exploreAction), for: .touchUpInside)
+
+		//label.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(exploreAction)))
+		return button
 	}()
 	
 	lazy var coverImageView: UIImageView = {
@@ -132,7 +136,7 @@ extension LauncherUIView {
 	}
 	@objc func  exploreAction(){
 		guard let _delegate = delegate else { return }
-		_delegate.explore()
+		          _delegate.explore()
 	}
 }
 

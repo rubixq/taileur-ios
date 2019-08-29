@@ -11,10 +11,10 @@ import UIKit
 extension UIView {
 	
 	var heavyTitleFont : UIFont {
-		return UIFont.init(name: ".SFUIDisplay-Heavy", size: 30) ?? UIFont.systemFont(ofSize: 20)
+		return UIFont.init(name: ".SFUIDisplay-Heavy", size: 40) ?? UIFont.systemFont(ofSize: 20)
 	}
 	var bigTitleFont : UIFont {
-		return UIFont.init(name: ".SFUIDisplay-Bold", size: 30) ?? UIFont.systemFont(ofSize: 20)
+		return UIFont.init(name: ".SFUIDisplay-Bold", size: 35) ?? UIFont.systemFont(ofSize: 20)
 	}
 	var mediumFont : UIFont {
 		return UIFont.init(name: ".SFUIDisplay-Medium", size: 20) ?? UIFont.systemFont(ofSize: 18)
@@ -29,7 +29,16 @@ extension UIView {
 	}
 	
 	
+	var regularFont : UIFont {
+		return UIFont.init(name: ".SFUIDisplay", size: 17) ?? UIFont.systemFont(ofSize: 17)
+	}
+	var mediumFont18 : UIFont {
+		return UIFont.init(name: ".SFUIDisplay-Medium", size: 18) ?? UIFont.systemFont(ofSize: 18)
+	}
 	
+	func setFont(name: String,size : CGFloat) -> UIFont{
+		return UIFont.init(name: name, size: size) ?? UIFont.systemFont(ofSize: size)
+	}
 
 }
 

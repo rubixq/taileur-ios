@@ -13,12 +13,18 @@
 		4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26A23165E4100247511 /* UIView+Extensions.swift */; };
 		4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26C2316666500247511 /* AutoConstrainExtension.swift */; };
 		4804B26F2316727900247511 /* JoinNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26E2316727900247511 /* JoinNowViewController.swift */; };
+		485CE4172317AEB100AB2CFB /* BottomSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4162317AEB100AB2CFB /* BottomSliderViewController.swift */; };
+		485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4192317AEEA00AB2CFB /* GenericTableView.swift */; };
+		485CE41C2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE41B2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift */; };
 		48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4322F9776400D07E2E /* AppDelegate.swift */; };
 		48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4A22F9776400D07E2E /* Taileur.xcdatamodeld */; };
 		48F52E4E22F9776600D07E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4D22F9776600D07E2E /* Assets.xcassets */; };
 		48F52E5122F9776600D07E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4F22F9776600D07E2E /* LaunchScreen.storyboard */; };
 		48F52E5C22F9776600D07E2E /* TaileurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E5B22F9776600D07E2E /* TaileurTests.swift */; };
 		48F52E6722F9776600D07E2E /* TaileurUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E6622F9776600D07E2E /* TaileurUITests.swift */; };
+		7A9F33BDA9E4EFCA78A29159 /* Pods_Taileur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FB4DC0DF6281BD43D0F646 /* Pods_Taileur.framework */; };
+		E2D9D482F9B7F1A068DEC055 /* Pods_TaileurUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA210E0753276630C2D63414 /* Pods_TaileurUITests.framework */; };
+		F43BA710C687199C1DBAC5E4 /* Pods_TaileurTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFEF5B72E686CFF41FB8BC2 /* Pods_TaileurTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +45,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BFEF5B72E686CFF41FB8BC2 /* Pods_TaileurTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaileurTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		374C385E6108ACC75F538A79 /* Pods-TaileurTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaileurTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaileurTests/Pods-TaileurTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E21592D03DA5DE5252E4661 /* Pods-TaileurUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaileurUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaileurUITests/Pods-TaileurUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4461B85E16BF340E8E5D57B9 /* Pods-Taileur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taileur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Taileur/Pods-Taileur.debug.xcconfig"; sourceTree = "<group>"; };
 		4804B26323165C3B00247511 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		4804B26523165CEB00247511 /* LauncherUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherUIView.swift; sourceTree = "<group>"; };
 		4804B26823165D9B00247511 /* UIViewcontroller+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+Extensions.swift"; sourceTree = "<group>"; };
 		4804B26A23165E4100247511 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4804B26C2316666500247511 /* AutoConstrainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoConstrainExtension.swift; sourceTree = "<group>"; };
 		4804B26E2316727900247511 /* JoinNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowViewController.swift; sourceTree = "<group>"; };
+		485CE4162317AEB100AB2CFB /* BottomSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSliderViewController.swift; sourceTree = "<group>"; };
+		485CE4192317AEEA00AB2CFB /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
+		485CE41B2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewsTableViewCell.swift; sourceTree = "<group>"; };
 		48F52E4022F9776400D07E2E /* Taileur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taileur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E4322F9776400D07E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52E4B22F9776400D07E2E /* Taileur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taileur.xcdatamodel; sourceTree = "<group>"; };
@@ -57,6 +70,11 @@
 		48F52E6222F9776600D07E2E /* TaileurUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaileurUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E6622F9776600D07E2E /* TaileurUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaileurUITests.swift; sourceTree = "<group>"; };
 		48F52E6822F9776600D07E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FB4DC0DF6281BD43D0F646 /* Pods_Taileur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taileur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7746338A2898E276F07817B9 /* Pods-Taileur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taileur.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taileur/Pods-Taileur.release.xcconfig"; sourceTree = "<group>"; };
+		9EB1B914AF6E3A24F13DDC43 /* Pods-TaileurTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaileurTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaileurTests/Pods-TaileurTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA210E0753276630C2D63414 /* Pods_TaileurUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaileurUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3002C2AB422119FC35748C4 /* Pods-TaileurUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaileurUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaileurUITests/Pods-TaileurUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A9F33BDA9E4EFCA78A29159 /* Pods_Taileur.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43BA710C687199C1DBAC5E4 /* Pods_TaileurTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D9D482F9B7F1A068DEC055 /* Pods_TaileurUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +117,8 @@
 		4804B26123165B0A00247511 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4804B26523165CEB00247511 /* LauncherUIView.swift */,
+				485CE4152317AE9300AB2CFB /* BottomSliderComponent */,
+				485CE4142317ADD500AB2CFB /* LaunchComponent */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -104,7 +126,6 @@
 		4804B26223165B1600247511 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4804B26323165C3B00247511 /* LaunchViewController.swift */,
 				4804B26E2316727900247511 /* JoinNowViewController.swift */,
 			);
 			path = ViewControllers;
@@ -120,6 +141,32 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		485CE4142317ADD500AB2CFB /* LaunchComponent */ = {
+			isa = PBXGroup;
+			children = (
+				4804B26323165C3B00247511 /* LaunchViewController.swift */,
+				4804B26523165CEB00247511 /* LauncherUIView.swift */,
+			);
+			path = LaunchComponent;
+			sourceTree = "<group>";
+		};
+		485CE4152317AE9300AB2CFB /* BottomSliderComponent */ = {
+			isa = PBXGroup;
+			children = (
+				485CE4162317AEB100AB2CFB /* BottomSliderViewController.swift */,
+			);
+			path = BottomSliderComponent;
+			sourceTree = "<group>";
+		};
+		485CE4182317AEC900AB2CFB /* GenericViews */ = {
+			isa = PBXGroup;
+			children = (
+				485CE4192317AEEA00AB2CFB /* GenericTableView.swift */,
+				485CE41B2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift */,
+			);
+			path = GenericViews;
+			sourceTree = "<group>";
+		};
 		48F52E3722F9776400D07E2E = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +174,8 @@
 				48F52E5A22F9776600D07E2E /* TaileurTests */,
 				48F52E6522F9776600D07E2E /* TaileurUITests */,
 				48F52E4122F9776400D07E2E /* Products */,
+				E2E32A4ACB98672C954671D4 /* Pods */,
+				BBDEC8374F8D43D7F89D694D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +192,7 @@
 		48F52E4222F9776400D07E2E /* Taileur */ = {
 			isa = PBXGroup;
 			children = (
+				485CE4182317AEC900AB2CFB /* GenericViews */,
 				4804B26723165D8700247511 /* Extensions */,
 				4804B26023165AFF00247511 /* UserInterface */,
 				48F52E4322F9776400D07E2E /* AppDelegate.swift */,
@@ -172,6 +222,29 @@
 			path = TaileurUITests;
 			sourceTree = "<group>";
 		};
+		BBDEC8374F8D43D7F89D694D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72FB4DC0DF6281BD43D0F646 /* Pods_Taileur.framework */,
+				1BFEF5B72E686CFF41FB8BC2 /* Pods_TaileurTests.framework */,
+				DA210E0753276630C2D63414 /* Pods_TaileurUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2E32A4ACB98672C954671D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4461B85E16BF340E8E5D57B9 /* Pods-Taileur.debug.xcconfig */,
+				7746338A2898E276F07817B9 /* Pods-Taileur.release.xcconfig */,
+				9EB1B914AF6E3A24F13DDC43 /* Pods-TaileurTests.debug.xcconfig */,
+				374C385E6108ACC75F538A79 /* Pods-TaileurTests.release.xcconfig */,
+				E3002C2AB422119FC35748C4 /* Pods-TaileurUITests.debug.xcconfig */,
+				3E21592D03DA5DE5252E4661 /* Pods-TaileurUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48F52E6B22F9776600D07E2E /* Build configuration list for PBXNativeTarget "Taileur" */;
 			buildPhases = (
+				A8176C26DC61CAD3B343FBDC /* [CP] Check Pods Manifest.lock */,
 				48F52E3C22F9776400D07E2E /* Sources */,
 				48F52E3D22F9776400D07E2E /* Frameworks */,
 				48F52E3E22F9776400D07E2E /* Resources */,
+				34C61722569279B0E45B105B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48F52E6E22F9776600D07E2E /* Build configuration list for PBXNativeTarget "TaileurTests" */;
 			buildPhases = (
+				90A9D8B12C371D598D1DB4C3 /* [CP] Check Pods Manifest.lock */,
 				48F52E5322F9776600D07E2E /* Sources */,
 				48F52E5422F9776600D07E2E /* Frameworks */,
 				48F52E5522F9776600D07E2E /* Resources */,
@@ -214,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48F52E7122F9776600D07E2E /* Build configuration list for PBXNativeTarget "TaileurUITests" */;
 			buildPhases = (
+				9AFEECCFAD3DB51A101E3B8A /* [CP] Check Pods Manifest.lock */,
 				48F52E5E22F9776600D07E2E /* Sources */,
 				48F52E5F22F9776600D07E2E /* Frameworks */,
 				48F52E6022F9776600D07E2E /* Resources */,
@@ -297,6 +374,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34C61722569279B0E45B105B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Taileur/Pods-Taileur-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatingPanel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taileur/Pods-Taileur-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90A9D8B12C371D598D1DB4C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaileurTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AFEECCFAD3DB51A101E3B8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaileurUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8176C26DC61CAD3B343FBDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Taileur-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48F52E3C22F9776400D07E2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -307,9 +459,12 @@
 				4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */,
 				48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */,
 				4804B26423165C3B00247511 /* LaunchViewController.swift in Sources */,
+				485CE41C2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift in Sources */,
+				485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */,
 				4804B26623165CEB00247511 /* LauncherUIView.swift in Sources */,
 				48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */,
 				4804B26923165D9B00247511 /* UIViewcontroller+Extensions.swift in Sources */,
+				485CE4172317AEB100AB2CFB /* BottomSliderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +629,7 @@
 		};
 		48F52E6C22F9776600D07E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4461B85E16BF340E8E5D57B9 /* Pods-Taileur.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +648,7 @@
 		};
 		48F52E6D22F9776600D07E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7746338A2898E276F07817B9 /* Pods-Taileur.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +667,7 @@
 		};
 		48F52E6F22F9776600D07E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB1B914AF6E3A24F13DDC43 /* Pods-TaileurTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,6 +689,7 @@
 		};
 		48F52E7022F9776600D07E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374C385E6108ACC75F538A79 /* Pods-TaileurTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +711,7 @@
 		};
 		48F52E7222F9776600D07E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3002C2AB422119FC35748C4 /* Pods-TaileurUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -572,6 +732,7 @@
 		};
 		48F52E7322F9776600D07E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E21592D03DA5DE5252E4661 /* Pods-TaileurUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

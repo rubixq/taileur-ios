@@ -44,13 +44,19 @@ class LaunchViewController: UIViewController {
 
 }
 
+extension LaunchViewController: BottomSliderViewControllerProtocol{
+	func itemSelected(item: BottomSheetItem) {
+		print("item selected" ,item)
+	}
+}
+
 extension LaunchViewController: LauncherUIViewProtocol {
 	func joinNow() {
-		self.navigationController?.show(JoinNowViewController(), sender: self)
+		showBottomSheet(delegate: self)
 	}
 	
 	func explore() {
-		
+			self.navigationController?.show(JoinNowViewController(), sender: self)
 	}
 	
 	
