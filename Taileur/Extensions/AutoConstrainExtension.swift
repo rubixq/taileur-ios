@@ -20,12 +20,28 @@ extension UIView{
 	func centerVerticalToView(_ view : UIView){
 		self.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 	}
-	
+	func centerHorizontalToView(_ view : UIView){
+		self.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+	}
 
 	
 	func setTopAnchor(onview : UIView,topAnchor : CGFloat)  {
 		self.topAnchor.constraint(equalTo: onview.topAnchor,constant: topAnchor).isActive = true
 	}
+	
+	
+	
+	func constraintoTop(superview view : UIView,
+											topSpace : CGFloat = 0,
+											leadingSpace : CGFloat = 0,
+											trailingSpace : CGFloat = 0){
+		self.topAnchor.constraint(equalTo: view.topAnchor,constant: topSpace).isActive = true
+		self.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: leadingSpace).isActive = true
+		self.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: trailingSpace).isActive = true
+	}
+	
+	
+	
 	
 	func constrainToSuperViewNoGuide(on view : UIView){
 		//let guide = view.safeAreaLayoutGuide
@@ -44,12 +60,17 @@ extension UIView{
 		
 	}
 	
-	func constrainToSuperView(on view : UIView){
+	func constrainToSuperView(on view : UIView,
+														top: CGFloat = 0,
+														leading:CGFloat = 0,
+														trailing:CGFloat = 0,
+														bottom: CGFloat = 0){
+		
 		let guide = view.safeAreaLayoutGuide
-		self.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
-		self.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
-		self.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true
-		self.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
+		self.leadingAnchor.constraint(equalTo: guide.leadingAnchor,constant: leading).isActive = true
+		self.trailingAnchor.constraint(equalTo: guide.trailingAnchor,constant: trailing).isActive = true
+		self.bottomAnchor.constraint(equalTo: guide.bottomAnchor,constant: bottom).isActive = true
+		self.topAnchor.constraint(equalTo: guide.topAnchor,constant: top).isActive = true
 		
 	}
 	

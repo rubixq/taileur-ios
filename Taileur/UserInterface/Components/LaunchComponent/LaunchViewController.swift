@@ -29,11 +29,11 @@ class LaunchViewController: UIViewController {
 	}
 	
 	override func viewDidDisappear(_ animated: Bool) {
-	//	mainView.timer.invalidate()
+		mainView.timer.invalidate()
 
 	}
 	override func viewWillDisappear(_ animated: Bool) {
-	//	mainView.timer.invalidate()
+	  mainView.timer.invalidate()
 	}
 	
 	override func viewDidLayoutSubviews() {
@@ -46,7 +46,10 @@ class LaunchViewController: UIViewController {
 
 extension LaunchViewController: BottomSliderViewControllerProtocol{
 	func itemSelected(item: BottomSheetItem) {
-		print("item selected" ,item)
+		let registerView = RegisterUIView()
+		let controller = OnBoardingViewController()
+		controller.subview = registerView
+		self.navigationController?.show(controller, sender: self)
 	}
 }
 
@@ -56,7 +59,7 @@ extension LaunchViewController: LauncherUIViewProtocol {
 	}
 	
 	func explore() {
-			self.navigationController?.show(JoinNowViewController(), sender: self)
+		self.navigationController?.show(JoinNowViewController(), sender: self)
 	}
 	
 	
