@@ -4,6 +4,9 @@
 target 'Taileur' do
    use_frameworks!
    pod 'FloatingPanel'
+	 pod 'Planet'
+	 pod 'IQKeyboardManagerSwift'
+
 
 target 'TaileurTests' do
     inherit! :search_paths

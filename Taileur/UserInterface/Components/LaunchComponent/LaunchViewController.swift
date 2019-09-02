@@ -46,9 +46,11 @@ class LaunchViewController: UIViewController {
 
 extension LaunchViewController: BottomSliderViewControllerProtocol{
 	func itemSelected(item: BottomSheetItem) {
-		let registerView = RegisterUIView()
+		
+		let loginView = LoginUIView()
 		let controller = OnBoardingViewController()
-		controller.subview = registerView
+	     	controller.loginView = loginView
+		    controller.mode = .login
 		self.navigationController?.show(controller, sender: self)
 	}
 }

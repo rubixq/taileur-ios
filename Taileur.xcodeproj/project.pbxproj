@@ -13,6 +13,7 @@
 		4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26A23165E4100247511 /* UIView+Extensions.swift */; };
 		4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26C2316666500247511 /* AutoConstrainExtension.swift */; };
 		4804B26F2316727900247511 /* JoinNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26E2316727900247511 /* JoinNowViewController.swift */; };
+		482B786D231CF5F5008CDE43 /* OnBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482B786C231CF5F5008CDE43 /* OnBoardModel.swift */; };
 		48480F9F231907ED00EA6E8C /* UIControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48480F9E231907ED00EA6E8C /* UIControls.swift */; };
 		485CE4172317AEB100AB2CFB /* BottomSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4162317AEB100AB2CFB /* BottomSliderViewController.swift */; };
 		485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4192317AEEA00AB2CFB /* GenericTableView.swift */; };
@@ -60,6 +61,7 @@
 		4804B26A23165E4100247511 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4804B26C2316666500247511 /* AutoConstrainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoConstrainExtension.swift; sourceTree = "<group>"; };
 		4804B26E2316727900247511 /* JoinNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowViewController.swift; sourceTree = "<group>"; };
+		482B786C231CF5F5008CDE43 /* OnBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardModel.swift; sourceTree = "<group>"; };
 		48480F9E231907ED00EA6E8C /* UIControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControls.swift; sourceTree = "<group>"; };
 		485CE4162317AEB100AB2CFB /* BottomSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSliderViewController.swift; sourceTree = "<group>"; };
 		485CE4192317AEEA00AB2CFB /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				485CE4202317C4DD00AB2CFB /* LoginUIView.swift */,
 				485CE4222317C4ED00AB2CFB /* RegisterUIView.swift */,
 				485CE4242317C50900AB2CFB /* OTPUIView.swift */,
+				482B786C231CF5F5008CDE43 /* OnBoardModel.swift */,
 			);
 			path = OnBoardingController;
 			sourceTree = "<group>";
@@ -406,10 +409,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Taileur/Pods-Taileur-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Planet/Planet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatingPanel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Planet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -480,6 +487,7 @@
 				4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */,
 				4804B26F2316727900247511 /* JoinNowViewController.swift in Sources */,
 				485CE4252317C50900AB2CFB /* OTPUIView.swift in Sources */,
+				482B786D231CF5F5008CDE43 /* OnBoardModel.swift in Sources */,
 				4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */,
 				485CE4232317C4ED00AB2CFB /* RegisterUIView.swift in Sources */,
 				485CE41F2317C4C900AB2CFB /* OnBoardingViewController.swift in Sources */,

@@ -1,16 +1,24 @@
 PODS:
   - FloatingPanel (1.6.4)
+  - IQKeyboardManagerSwift (6.4.1)
+  - Planet (0.3.1)
 
 DEPENDENCIES:
   - FloatingPanel
+  - IQKeyboardManagerSwift
+  - Planet
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FloatingPanel
+    - IQKeyboardManagerSwift
+    - Planet
 
 SPEC CHECKSUMS:
   FloatingPanel: 062e0500e3b9848e3eb91595367fc6d579e428df
+  IQKeyboardManagerSwift: d2df660d0b8d64a15cb2537c9ff303213fa515b2
+  Planet: 8366988beff4e7b86c7530f67ce0172738c6ea24
 
-PODFILE CHECKSUM: 694b7e8c22a3c6d23cd71a32a34c62fa9829143f
+PODFILE CHECKSUM: 611fb6774e49f03077910c36fd404c6d0e8f8fff
 
 COCOAPODS: 1.5.3
