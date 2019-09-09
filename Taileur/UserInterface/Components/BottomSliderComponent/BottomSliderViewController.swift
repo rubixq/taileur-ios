@@ -48,6 +48,9 @@ class BottomSliderViewController: UIViewController {
 	
 	}
 	
+	override func viewWillDisappear(_ animated: Bool) {
+		self.dismiss(animated: true, completion: nil)
+	}
 	
 	lazy var titleLabel: UILabel = {
 		let label = UILabel()

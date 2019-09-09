@@ -6,6 +6,7 @@ target 'Taileur' do
    pod 'FloatingPanel'
 	 pod 'Planet'
 	 pod 'IQKeyboardManagerSwift'
+	 pod 'LBTATools'
 
 
 target 'TaileurTests' do

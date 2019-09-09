@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Taileur/UserInterface/Components/OnBoardingController/OnBoardingViewController.swift"
-            timestampString = "589106719.4516619"
+            filePath = "Taileur/UserInterface/Components/OnBoardingController/LoginUIView.swift"
+            timestampString = "589713656.202207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "showRegister()"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "showCountryPicker()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

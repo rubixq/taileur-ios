@@ -22,6 +22,13 @@
 		485CE4212317C4DD00AB2CFB /* LoginUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4202317C4DD00AB2CFB /* LoginUIView.swift */; };
 		485CE4232317C4ED00AB2CFB /* RegisterUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4222317C4ED00AB2CFB /* RegisterUIView.swift */; };
 		485CE4252317C50900AB2CFB /* OTPUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4242317C50900AB2CFB /* OTPUIView.swift */; };
+		4866C50C2326399F007A6803 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C50B2326399F007A6803 /* ActivityIndicator.swift */; };
+		4866C50F23263B26007A6803 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C50E23263B26007A6803 /* UsersData.swift */; };
+		4866C51123263C23007A6803 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C51023263C23007A6803 /* DataStorage.swift */; };
+		4866C51323264097007A6803 /* ExploreTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C51223264097007A6803 /* ExploreTabViewController.swift */; };
+		4866C5162326412E007A6803 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C5152326412E007A6803 /* HomeViewController.swift */; };
+		4866C5182326413E007A6803 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C5172326413E007A6803 /* ShoppingViewController.swift */; };
+		4866C51A2326414C007A6803 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C5192326414C007A6803 /* UserProfileViewController.swift */; };
 		48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4322F9776400D07E2E /* AppDelegate.swift */; };
 		48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4A22F9776400D07E2E /* Taileur.xcdatamodeld */; };
 		48F52E4E22F9776600D07E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4D22F9776600D07E2E /* Assets.xcassets */; };
@@ -70,6 +77,13 @@
 		485CE4202317C4DD00AB2CFB /* LoginUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIView.swift; sourceTree = "<group>"; };
 		485CE4222317C4ED00AB2CFB /* RegisterUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUIView.swift; sourceTree = "<group>"; };
 		485CE4242317C50900AB2CFB /* OTPUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPUIView.swift; sourceTree = "<group>"; };
+		4866C50B2326399F007A6803 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		4866C50E23263B26007A6803 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
+		4866C51023263C23007A6803 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		4866C51223264097007A6803 /* ExploreTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTabViewController.swift; sourceTree = "<group>"; };
+		4866C5152326412E007A6803 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4866C5172326413E007A6803 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		4866C5192326414C007A6803 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		48F52E4022F9776400D07E2E /* Taileur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taileur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E4322F9776400D07E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52E4B22F9776400D07E2E /* Taileur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taileur.xcdatamodel; sourceTree = "<group>"; };
@@ -120,6 +134,8 @@
 		4804B26023165AFF00247511 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				485CE4182317AEC900AB2CFB /* GenericViews */,
+				4866C50A23263993007A6803 /* CustomViews */,
 				4804B26223165B1600247511 /* ViewControllers */,
 				4804B26123165B0A00247511 /* Components */,
 			);
@@ -129,6 +145,7 @@
 		4804B26123165B0A00247511 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4866C51423264114007A6803 /* Explore */,
 				485CE41D2317C48600AB2CFB /* OnBoardingController */,
 				485CE4152317AE9300AB2CFB /* BottomSliderComponent */,
 				485CE4142317ADD500AB2CFB /* LaunchComponent */,
@@ -193,6 +210,34 @@
 			path = OnBoardingController;
 			sourceTree = "<group>";
 		};
+		4866C50A23263993007A6803 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4866C50B2326399F007A6803 /* ActivityIndicator.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4866C50D23263B0F007A6803 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4866C50E23263B26007A6803 /* UsersData.swift */,
+				4866C51023263C23007A6803 /* DataStorage.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		4866C51423264114007A6803 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				4866C51223264097007A6803 /* ExploreTabViewController.swift */,
+				4866C5152326412E007A6803 /* HomeViewController.swift */,
+				4866C5172326413E007A6803 /* ShoppingViewController.swift */,
+				4866C5192326414C007A6803 /* UserProfileViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
 		48F52E3722F9776400D07E2E = {
 			isa = PBXGroup;
 			children = (
@@ -218,7 +263,7 @@
 		48F52E4222F9776400D07E2E /* Taileur */ = {
 			isa = PBXGroup;
 			children = (
-				485CE4182317AEC900AB2CFB /* GenericViews */,
+				4866C50D23263B0F007A6803 /* DataStorage */,
 				4804B26723165D8700247511 /* Extensions */,
 				4804B26023165AFF00247511 /* UserInterface */,
 				48F52E4322F9776400D07E2E /* AppDelegate.swift */,
@@ -410,12 +455,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Taileur/Pods-Taileur-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/LBTATools/LBTATools.framework",
 				"${BUILT_PRODUCTS_DIR}/Planet/Planet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatingPanel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBTATools.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Planet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,22 +532,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */,
+				4866C51A2326414C007A6803 /* UserProfileViewController.swift in Sources */,
 				4804B26F2316727900247511 /* JoinNowViewController.swift in Sources */,
 				485CE4252317C50900AB2CFB /* OTPUIView.swift in Sources */,
 				482B786D231CF5F5008CDE43 /* OnBoardModel.swift in Sources */,
 				4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */,
 				485CE4232317C4ED00AB2CFB /* RegisterUIView.swift in Sources */,
 				485CE41F2317C4C900AB2CFB /* OnBoardingViewController.swift in Sources */,
+				4866C5162326412E007A6803 /* HomeViewController.swift in Sources */,
+				4866C51123263C23007A6803 /* DataStorage.swift in Sources */,
 				48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */,
 				4804B26423165C3B00247511 /* LaunchViewController.swift in Sources */,
 				485CE41C2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift in Sources */,
 				485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */,
 				4804B26623165CEB00247511 /* LauncherUIView.swift in Sources */,
 				48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */,
+				4866C51323264097007A6803 /* ExploreTabViewController.swift in Sources */,
 				485CE4212317C4DD00AB2CFB /* LoginUIView.swift in Sources */,
 				48480F9F231907ED00EA6E8C /* UIControls.swift in Sources */,
 				4804B26923165D9B00247511 /* UIViewcontroller+Extensions.swift in Sources */,
+				4866C5182326413E007A6803 /* ShoppingViewController.swift in Sources */,
+				4866C50C2326399F007A6803 /* ActivityIndicator.swift in Sources */,
 				485CE4172317AEB100AB2CFB /* BottomSliderViewController.swift in Sources */,
+				4866C50F23263B26007A6803 /* UsersData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,6 +27,7 @@ class OnBoardingViewController: UIViewController {
 	var loginView : LoginUIView!
 	var registerView : RegisterUIView!
 	var mode : OnboardMode = .login
+	
    override func viewDidLoad() {
 			super.viewDidLoad()
 		  self.view.backgroundColor = .white
@@ -36,11 +37,21 @@ class OnBoardingViewController: UIViewController {
 		  registerView = RegisterUIView()
 		  registerView.delegate = self
 		  countryPicker.delegate = self
+		
+
+		
     }
 	
-	override func viewDidLayoutSubviews() {
-		
+	
+	func updateCountryCodeDetails(){
+		guard let county = UsersData.country else { return  }
+		loginView.codeField.text = county.callingCode
+		loginView.flagIcon.image = county.image
+		registerView.codeField.text = county.callingCode
+		registerView.flagIcon.image = county.image
 	}
+	
+	override func viewDidLayoutSubviews() {}
 	override func viewWillLayoutSubviews() {
 		
 		view.addSubview(loginView)
@@ -65,9 +76,6 @@ class OnBoardingViewController: UIViewController {
 
 extension OnBoardingViewController : OnBoardingProtocol {
 	
-	//let viewController = CountryPickerViewController()
-	
-	
 	var showView : Void {
 		if mode == .login {
 			loginView.isHidden = false
@@ -81,33 +89,43 @@ extension OnBoardingViewController : OnBoardingProtocol {
 	}
 	func showRegister() {
 		 mode = .register
-	    showView
-	
-		
+		showView
 	}
 	func showForgotpassword() {
-		
+		showOneTextFieldDialogWithAction(with: "Forgot your password?",
+																		 and: "Provide a phone number to recover your password",
+																		 for: "Recover") { (password) in
+																			
+																			print(password)
+			
+		}
 	}
+	
+	
 	func showLogin() {
 		 mode = .login
-	  	showView
+		showView
 	}
 	func justExplore() {
-		
+		let appDelegate = UIApplication.shared.delegate as? AppDelegate
+		appDelegate?.window?.rootViewController = ExploreTabViewController()
+		appDelegate?.window?.makeKeyAndVisible()
 	}
 	func showCountryPicker() {
-		self.show(countryPicker, sender: self)
+		self.show(UINavigationController(rootViewController: countryPicker), sender: self)
 	}
 	
 }
 
 extension OnBoardingViewController : CountryPickerViewControllerDelegate {
 	func countryPickerViewControllerDidCancel(_ countryPickerViewController: CountryPickerViewController) {
-		
+		countryPickerViewController.dismiss(animated: true)
 	}
-	
 	func countryPickerViewController(_ countryPickerViewController: CountryPickerViewController, didSelectCountry country: Country) {
-		
+		   UsersData.country = country
+		countryPickerViewController.dismiss(animated: true,completion: {
+			self.updateCountryCodeDetails()
+		})
 	}
 	
 	

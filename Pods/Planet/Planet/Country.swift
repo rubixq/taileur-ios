@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct Country {
+public struct Country:Codable {
     public let name: String
     public let isoCode: String
     public let callingCode: String

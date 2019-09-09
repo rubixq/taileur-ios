@@ -113,7 +113,7 @@ class LoginUIView: UIView {
 	}
 	@objc func showjustExplore(){
 		guard let _delegate = delegate else { return  }
-		_delegate.showForgotpassword()
+		_delegate.justExplore()
 	}
 	@objc func showCountryPicker(){
 		guard let _delegate = delegate else { return  }
@@ -152,6 +152,8 @@ class LoginUIView: UIView {
 	lazy var flagIcon: UIImageView = {
 		let imageView = UIImageView()
 		imageView.translatesAutoresizingMaskIntoConstraints = false
+		imageView.isUserInteractionEnabled = true
+		imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showCountryPicker)))
 		return imageView
 	}()
 	
@@ -161,7 +163,8 @@ class LoginUIView: UIView {
 		field.keyboardType = .phonePad
 		field.placeholder = "+1"
 		field.textAlignment = .center
-		field.addTarget(self, action: #selector(showCountryPicker), for: .touchUpInside)
+		field.addTarget(self, action: #selector(showCountryPicker), for: .editingDidBegin)
+		field.isUserInteractionEnabled = true
 		return field
 	}()
 	lazy var phoneNumberField: UITextField = {

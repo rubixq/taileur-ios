@@ -61,7 +61,10 @@ extension LaunchViewController: LauncherUIViewProtocol {
 	}
 	
 	func explore() {
-		self.navigationController?.show(JoinNowViewController(), sender: self)
+		let appDelegate = UIApplication.shared.delegate as? AppDelegate
+		appDelegate?.window?.rootViewController = ExploreTabViewController()
+		appDelegate?.window?.makeKeyAndVisible()
+		
 	}
 	
 	
