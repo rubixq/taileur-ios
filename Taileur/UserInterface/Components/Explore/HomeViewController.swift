@@ -24,8 +24,8 @@ class HomeViewController: UIViewController {
 			//searchController.searchBar.backgroundColor = .red
 
 			
-			searchController.searchBar.textField?.backgroundColor = .yellow
-			searchController.searchBar.textField?.tintColor = .yellow
+		//	searchController.searchBar.textField?.backgroundColor = .yellow
+			//searchController.searchBar.textField?.tintColor = .yellow
 			
 			definesPresentationContext = true
 			searchController.obscuresBackgroundDuringPresentation = false
