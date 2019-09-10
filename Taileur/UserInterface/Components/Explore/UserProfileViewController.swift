@@ -10,12 +10,19 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
 
+	var subview : UserProfileSubView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+			  subview = UserProfileSubView()
     }
-    
+	
+	
+	override func viewWillLayoutSubviews() {
+		view.addSubview(subview)
+		subview.constrainToSuperView(on: view)
+	}
+	
 
 
 }
