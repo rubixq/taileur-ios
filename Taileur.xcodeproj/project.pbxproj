@@ -13,6 +13,7 @@
 		4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26A23165E4100247511 /* UIView+Extensions.swift */; };
 		4804B26D2316666500247511 /* AutoConstrainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26C2316666500247511 /* AutoConstrainExtension.swift */; };
 		4804B26F2316727900247511 /* JoinNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B26E2316727900247511 /* JoinNowViewController.swift */; };
+		48077246232C43450069494B /* BottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48077245232C43450069494B /* BottomCell.swift */; };
 		4818D8F32326FCC900218435 /* UserProfileSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4818D8F22326FCC900218435 /* UserProfileSubView.swift */; };
 		4818D8F523278D2200218435 /* IconTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4818D8F423278D2200218435 /* IconTitleTableViewCell.swift */; };
 		482B786D231CF5F5008CDE43 /* OnBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482B786C231CF5F5008CDE43 /* OnBoardModel.swift */; };
@@ -31,6 +32,9 @@
 		4866C5162326412E007A6803 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C5152326412E007A6803 /* HomeViewController.swift */; };
 		4866C5182326413E007A6803 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C5172326413E007A6803 /* ShoppingViewController.swift */; };
 		4866C51A2326414C007A6803 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C5192326414C007A6803 /* UserProfileViewController.swift */; };
+		48CB06C0232BCEFF008CF4C2 /* GenericCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB06BF232BCEFF008CF4C2 /* GenericCollectionView.swift */; };
+		48CB06C5232BE056008CF4C2 /* MiddleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB06C4232BE056008CF4C2 /* MiddleCell.swift */; };
+		48CB06C7232BE070008CF4C2 /* TopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB06C6232BE070008CF4C2 /* TopCell.swift */; };
 		48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4322F9776400D07E2E /* AppDelegate.swift */; };
 		48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4A22F9776400D07E2E /* Taileur.xcdatamodeld */; };
 		48F52E4E22F9776600D07E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4D22F9776600D07E2E /* Assets.xcassets */; };
@@ -70,6 +74,7 @@
 		4804B26A23165E4100247511 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4804B26C2316666500247511 /* AutoConstrainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoConstrainExtension.swift; sourceTree = "<group>"; };
 		4804B26E2316727900247511 /* JoinNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowViewController.swift; sourceTree = "<group>"; };
+		48077245232C43450069494B /* BottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCell.swift; sourceTree = "<group>"; };
 		4818D8F22326FCC900218435 /* UserProfileSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSubView.swift; sourceTree = "<group>"; };
 		4818D8F423278D2200218435 /* IconTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTitleTableViewCell.swift; sourceTree = "<group>"; };
 		482B786C231CF5F5008CDE43 /* OnBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardModel.swift; sourceTree = "<group>"; };
@@ -88,6 +93,9 @@
 		4866C5152326412E007A6803 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4866C5172326413E007A6803 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		4866C5192326414C007A6803 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		48CB06BF232BCEFF008CF4C2 /* GenericCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionView.swift; sourceTree = "<group>"; };
+		48CB06C4232BE056008CF4C2 /* MiddleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleCell.swift; sourceTree = "<group>"; };
+		48CB06C6232BE070008CF4C2 /* TopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCell.swift; sourceTree = "<group>"; };
 		48F52E4022F9776400D07E2E /* Taileur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taileur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E4322F9776400D07E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52E4B22F9776400D07E2E /* Taileur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taileur.xcdatamodel; sourceTree = "<group>"; };
@@ -199,6 +207,7 @@
 				485CE4192317AEEA00AB2CFB /* GenericTableView.swift */,
 				485CE41B2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift */,
 				4818D8F423278D2200218435 /* IconTitleTableViewCell.swift */,
+				48CB06BF232BCEFF008CF4C2 /* GenericCollectionView.swift */,
 			);
 			path = GenericViews;
 			sourceTree = "<group>";
@@ -235,13 +244,40 @@
 		4866C51423264114007A6803 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				48CB06C1232BE015008CF4C2 /* HomeComponent */,
+				48829D5E232A3566000D2B47 /* UserProfileComponent */,
 				4866C51223264097007A6803 /* ExploreTabViewController.swift */,
-				4866C5152326412E007A6803 /* HomeViewController.swift */,
 				4866C5172326413E007A6803 /* ShoppingViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		48829D5E232A3566000D2B47 /* UserProfileComponent */ = {
+			isa = PBXGroup;
+			children = (
 				4866C5192326414C007A6803 /* UserProfileViewController.swift */,
 				4818D8F22326FCC900218435 /* UserProfileSubView.swift */,
 			);
-			path = Explore;
+			path = UserProfileComponent;
+			sourceTree = "<group>";
+		};
+		48CB06C1232BE015008CF4C2 /* HomeComponent */ = {
+			isa = PBXGroup;
+			children = (
+				48CB06C8232BE13D008CF4C2 /* HomeViewCells */,
+				4866C5152326412E007A6803 /* HomeViewController.swift */,
+			);
+			path = HomeComponent;
+			sourceTree = "<group>";
+		};
+		48CB06C8232BE13D008CF4C2 /* HomeViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				48CB06C4232BE056008CF4C2 /* MiddleCell.swift */,
+				48CB06C6232BE070008CF4C2 /* TopCell.swift */,
+				48077245232C43450069494B /* BottomCell.swift */,
+			);
+			path = HomeViewCells;
 			sourceTree = "<group>";
 		};
 		48F52E3722F9776400D07E2E = {
@@ -537,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48077246232C43450069494B /* BottomCell.swift in Sources */,
 				4804B26B23165E4100247511 /* UIView+Extensions.swift in Sources */,
 				4866C51A2326414C007A6803 /* UserProfileViewController.swift in Sources */,
 				4804B26F2316727900247511 /* JoinNowViewController.swift in Sources */,
@@ -552,13 +589,16 @@
 				4804B26423165C3B00247511 /* LaunchViewController.swift in Sources */,
 				4818D8F523278D2200218435 /* IconTitleTableViewCell.swift in Sources */,
 				485CE41C2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift in Sources */,
+				48CB06C0232BCEFF008CF4C2 /* GenericCollectionView.swift in Sources */,
 				485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */,
 				4804B26623165CEB00247511 /* LauncherUIView.swift in Sources */,
 				48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */,
 				4866C51323264097007A6803 /* ExploreTabViewController.swift in Sources */,
 				485CE4212317C4DD00AB2CFB /* LoginUIView.swift in Sources */,
 				48480F9F231907ED00EA6E8C /* UIControls.swift in Sources */,
+				48CB06C7232BE070008CF4C2 /* TopCell.swift in Sources */,
 				4804B26923165D9B00247511 /* UIViewcontroller+Extensions.swift in Sources */,
+				48CB06C5232BE056008CF4C2 /* MiddleCell.swift in Sources */,
 				4866C5182326413E007A6803 /* ShoppingViewController.swift in Sources */,
 				4866C50C2326399F007A6803 /* ActivityIndicator.swift in Sources */,
 				485CE4172317AEB100AB2CFB /* BottomSliderViewController.swift in Sources */,

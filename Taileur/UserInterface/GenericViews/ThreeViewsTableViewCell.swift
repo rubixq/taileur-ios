@@ -12,13 +12,12 @@ class ThreeViewsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-       constrainView()
+        constrainView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-       constrainView()
+        constrainView()
     }
 
 	

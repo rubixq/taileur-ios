@@ -163,5 +163,17 @@ extension UIView {
 																					attribute: NSLayoutConstraint.Attribute.top,
 																					multiplier: 1, constant: 0))
 	}
+	
+	
+	func addShadow(){
+		self.layer.cornerRadius = 8
+		self.layer.shadowColor = UIColor.lightGray.cgColor
+		self.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+		self.layer.shadowRadius = 3
+		self.layer.shadowOpacity = 0.4
+		
+	}
 }
+
+
 

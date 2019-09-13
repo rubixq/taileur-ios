@@ -45,7 +45,7 @@ class UserProfileSubView: UIView {
 		topView.topAnchor.constraint(equalTo: topAnchor).isActive = true
 		//topView.heightAnchor.constraint(equalToConstant: 200).isActive = true
 		
-		userImage.topAnchor.constraint(equalTo: topView.topAnchor,constant: 20).isActive = true
+		userImage.topAnchor.constraint(equalTo: topView.topAnchor,constant: 40).isActive = true
 		userImage.bottomAnchor.constraint(equalTo: topView.bottomAnchor,constant: -20).isActive = true
 		userImage.leadingAnchor.constraint(equalTo: topView.leadingAnchor,constant: 20).isActive = true
 		userImage.centerHorizontalToView(topView)

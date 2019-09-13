@@ -29,7 +29,21 @@ extension UIView{
 		self.topAnchor.constraint(equalTo: onview.topAnchor,constant: topAnchor).isActive = true
 	}
 	
+	func pintoLeft(superview: UIView,space: CGFloat = 0.0){
+		self.leadingAnchor.constraint(equalTo: superview.leadingAnchor,constant: space).isActive = true
+	}
 	
+	func pintoRight(superview: UIView,space: CGFloat = 0.0){
+		self.trailingAnchor.constraint(equalTo: superview.trailingAnchor,constant: space).isActive = true
+	}
+	
+	func pintoTop(superview: UIView,space: CGFloat = 0.0){
+		self.topAnchor.constraint(equalTo: superview.topAnchor,constant: space).isActive = true
+	}
+	
+	func pintoBottom(superview: UIView,space: CGFloat = 0.0){
+		self.bottomAnchor.constraint(equalTo: superview.bottomAnchor,constant: space).isActive = true
+	}
 	
 	func constraintoTop(superview view : UIView,
 											topSpace : CGFloat = 0,
