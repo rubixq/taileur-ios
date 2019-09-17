@@ -15,15 +15,20 @@ struct MiddleData{
 	var subtitle: String!
 }
 
+protocol MiddleCellDelegate {
+	func middleCellclicked(data: MiddleData,collectionCell : UICollectionViewCell)
+}
 
-
-class MiddleCell : UICollectionViewCell {
-	override init(frame: CGRect) {
-		super.init(frame: frame)
+class MiddleCell : UITableViewCell {
+	
+	var delegate : MiddleCellDelegate!
+	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+		super.init(style: style, reuseIdentifier: reuseIdentifier)
 		setUpViews()
 		
-		
 	}
+	
+	
 	
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
@@ -37,6 +42,7 @@ class MiddleCell : UICollectionViewCell {
 		middleCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
 		middleCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 10).isActive = true
 		middleCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -8).isActive = true
+		
 		
 		
 	}
@@ -58,8 +64,9 @@ class MiddleCell : UICollectionViewCell {
 			cell.icon.image = tab.icon
 			cell.title.text = tab.title
 			cell.subtitle.text = tab.subtitle
-		}) { (tab,row,collectionview) in
-			
+		}) { (tab,row,collectionview,cell) in
+			guard let _delegate = self.delegate else { return  }
+			_delegate.middleCellclicked(data: tab,collectionCell: cell)
 			
 		}
 		collectionview.contentInset = UIEdgeInsets(top: 0, left: 2, bottom: -1, right: 0)

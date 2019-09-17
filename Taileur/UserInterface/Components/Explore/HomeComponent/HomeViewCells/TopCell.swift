@@ -7,13 +7,13 @@
 //
 
 import UIKit
-class TopCell : UICollectionViewCell{
+class TopCell : UITableViewCell{
 	
 	
-	override init(frame: CGRect) {
-		super.init(frame: frame)
+	//Factory methods
+	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+		super.init(style: style, reuseIdentifier: reuseIdentifier)
 		setUpViews()
-		
 		
 	}
 	

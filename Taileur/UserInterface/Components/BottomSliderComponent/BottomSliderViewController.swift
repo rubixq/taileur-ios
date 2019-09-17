@@ -74,7 +74,6 @@ class BottomSliderViewController: UIViewController {
 			_delegate.itemSelected(item: item)
 			self.dismiss(animated: true)
 		  })
-		//tableview.backgroundColor = .reds
 		return tableview
 	}()
 

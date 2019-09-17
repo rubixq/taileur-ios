@@ -12,7 +12,7 @@ class GenericCollectionView<T, Cell: UICollectionViewCell>: UICollectionView,UIC
 	
 	var items: [T]
 	var configure: (Cell, T,Int) -> Void
-	var selectHandler: (T,Int,UICollectionView) -> Void
+	var selectHandler: (T,Int,UICollectionView,UICollectionViewCell) -> Void
 	var cellWidth: CGFloat = 0.0
 	var cellHeight: CGFloat = 0.0
 	required init?(coder aDecoder: NSCoder) {
@@ -35,7 +35,7 @@ class GenericCollectionView<T, Cell: UICollectionViewCell>: UICollectionView,UIC
 			 frame: CGRect,
 			 layout:UICollectionViewLayout,
 			 items: [T],
-			 configure: @escaping (Cell, T,Int) -> Void, selectHandler: @escaping (T,Int,UICollectionView) -> Void) {
+			 configure: @escaping (Cell, T,Int) -> Void, selectHandler: @escaping (T,Int,UICollectionView,UICollectionViewCell) -> Void) {
 		
 		self.items = items
 		self.configure = configure
@@ -71,7 +71,7 @@ class GenericCollectionView<T, Cell: UICollectionViewCell>: UICollectionView,UIC
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		//collectionView.deselectItem(at: indexPath, animated: true)
 		let item = items[indexPath.row]
-		selectHandler(item,indexPath.row,collectionView)
+		selectHandler(item,indexPath.row,collectionView,collectionView.cellForItem(at: indexPath)!)
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

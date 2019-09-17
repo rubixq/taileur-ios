@@ -23,7 +23,7 @@ extension UIView{
 	func centerHorizontalToView(_ view : UIView){
 		self.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 	}
-
+	
 	
 	func setTopAnchor(onview : UIView,topAnchor : CGFloat)  {
 		self.topAnchor.constraint(equalTo: onview.topAnchor,constant: topAnchor).isActive = true
@@ -33,13 +33,29 @@ extension UIView{
 		self.leadingAnchor.constraint(equalTo: superview.leadingAnchor,constant: space).isActive = true
 	}
 	
+	func pintoLeft(superview: NSLayoutAnchor<NSLayoutXAxisAnchor>,space: CGFloat = 0.0){
+		self.leadingAnchor.constraint(equalTo: superview,constant: space).isActive = true
+	}
+	
 	func pintoRight(superview: UIView,space: CGFloat = 0.0){
 		self.trailingAnchor.constraint(equalTo: superview.trailingAnchor,constant: space).isActive = true
 	}
 	
+	func pintoRight(superview: NSLayoutAnchor<NSLayoutXAxisAnchor>,space: CGFloat = 0.0){
+		self.leadingAnchor.constraint(equalTo: superview,constant: space).isActive = true
+	}
 	func pintoTop(superview: UIView,space: CGFloat = 0.0){
 		self.topAnchor.constraint(equalTo: superview.topAnchor,constant: space).isActive = true
 	}
+	//
+	func pintoTop(superview: NSLayoutYAxisAnchor,space: CGFloat = 0.0){
+		self.topAnchor.constraint(equalTo: superview,constant: space).isActive = true
+	}
+	
+	func pintoBottom(superview: NSLayoutYAxisAnchor,space: CGFloat = 0.0){
+		self.bottomAnchor.constraint(equalTo: superview,constant: space).isActive = true
+	}
+	
 	
 	func pintoBottom(superview: UIView,space: CGFloat = 0.0){
 		self.bottomAnchor.constraint(equalTo: superview.bottomAnchor,constant: space).isActive = true

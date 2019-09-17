@@ -15,11 +15,18 @@ struct ProductSummary {
 	var price: String!
 }
 
-class BottomCell : UICollectionViewCell {
-	override init(frame: CGRect) {
-		super.init(frame: frame)
+
+protocol BottomCellDelegate {
+	func BottomCellclicked(data: ProductSummary,collectionCell : UICollectionViewCell)
+}
+
+class BottomCell : UITableViewCell {
+	
+	var delegate : BottomCellDelegate!
+
+	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+		super.init(style: style, reuseIdentifier: reuseIdentifier)
 		setUpViews()
-		
 		
 	}
 	
@@ -59,8 +66,9 @@ class BottomCell : UICollectionViewCell {
 			cell.categoryLabel.text = product.category
 			cell.itemPrice.text = product.price
 
-		}) { (tab,row,collectionview) in
-			
+		}) { (tab,row,collectionview,cell) in
+			guard let _delegate = self.delegate else { return  }
+			_delegate.BottomCellclicked(data: tab,collectionCell: cell)
 			
 		}
 		//collectionview.contentInset = UIEdgeInsets(top: 0, left: 2, bottom: -1, right: 0)
@@ -125,7 +133,7 @@ class BottomCellCollectionViewCell : UICollectionViewCell {
 	lazy var stack: UIStackView = {
 		let view = UIStackView()
 		view.axis = .vertical
-		view.spacing = 4
+		view.spacing = 5
 		view.distribution = UIStackView.Distribution.fillEqually
 		view.translatesAutoresizingMaskIntoConstraints = false
 		return view

@@ -35,6 +35,8 @@
 		48CB06C0232BCEFF008CF4C2 /* GenericCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB06BF232BCEFF008CF4C2 /* GenericCollectionView.swift */; };
 		48CB06C5232BE056008CF4C2 /* MiddleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB06C4232BE056008CF4C2 /* MiddleCell.swift */; };
 		48CB06C7232BE070008CF4C2 /* TopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB06C6232BE070008CF4C2 /* TopCell.swift */; };
+		48CD474B2330CCAE0050FF6E /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD474A2330CCAE0050FF6E /* HomeDetailViewController.swift */; };
+		48CD474D2330CEA30050FF6E /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD474C2330CEA30050FF6E /* TransitionAnimator.swift */; };
 		48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4322F9776400D07E2E /* AppDelegate.swift */; };
 		48F52E4C22F9776400D07E2E /* Taileur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F52E4A22F9776400D07E2E /* Taileur.xcdatamodeld */; };
 		48F52E4E22F9776600D07E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F52E4D22F9776600D07E2E /* Assets.xcassets */; };
@@ -96,6 +98,8 @@
 		48CB06BF232BCEFF008CF4C2 /* GenericCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionView.swift; sourceTree = "<group>"; };
 		48CB06C4232BE056008CF4C2 /* MiddleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleCell.swift; sourceTree = "<group>"; };
 		48CB06C6232BE070008CF4C2 /* TopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCell.swift; sourceTree = "<group>"; };
+		48CD474A2330CCAE0050FF6E /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		48CD474C2330CEA30050FF6E /* TransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
 		48F52E4022F9776400D07E2E /* Taileur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taileur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E4322F9776400D07E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52E4B22F9776400D07E2E /* Taileur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taileur.xcdatamodel; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				4866C50A23263993007A6803 /* CustomViews */,
 				4804B26223165B1600247511 /* ViewControllers */,
 				4804B26123165B0A00247511 /* Components */,
+				48CD474C2330CEA30050FF6E /* TransitionAnimator.swift */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			children = (
 				48CB06C8232BE13D008CF4C2 /* HomeViewCells */,
 				4866C5152326412E007A6803 /* HomeViewController.swift */,
+				48CD474A2330CCAE0050FF6E /* HomeDetailViewController.swift */,
 			);
 			path = HomeComponent;
 			sourceTree = "<group>";
@@ -593,10 +599,12 @@
 				485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */,
 				4804B26623165CEB00247511 /* LauncherUIView.swift in Sources */,
 				48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */,
+				48CD474B2330CCAE0050FF6E /* HomeDetailViewController.swift in Sources */,
 				4866C51323264097007A6803 /* ExploreTabViewController.swift in Sources */,
 				485CE4212317C4DD00AB2CFB /* LoginUIView.swift in Sources */,
 				48480F9F231907ED00EA6E8C /* UIControls.swift in Sources */,
 				48CB06C7232BE070008CF4C2 /* TopCell.swift in Sources */,
+				48CD474D2330CEA30050FF6E /* TransitionAnimator.swift in Sources */,
 				4804B26923165D9B00247511 /* UIViewcontroller+Extensions.swift in Sources */,
 				48CB06C5232BE056008CF4C2 /* MiddleCell.swift in Sources */,
 				4866C5182326413E007A6803 /* ShoppingViewController.swift in Sources */,
