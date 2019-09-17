@@ -132,9 +132,9 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
 		case 0:
 			return 0
 		case 1:
-			return 90
+			return 100
 		case 2:
-			return 90
+			return 100
 		default:
 			return 0
 		}
