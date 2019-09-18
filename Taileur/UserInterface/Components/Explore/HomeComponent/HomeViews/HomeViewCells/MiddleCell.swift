@@ -18,10 +18,14 @@ struct MiddleData{
 
 
 class MiddleCell : UICollectionViewCell {
+	
+	var delegate : HomeViewControllerProtocol!
+
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		setUpViews()
-		
+	
 		
 	}
 	
@@ -31,7 +35,6 @@ class MiddleCell : UICollectionViewCell {
 	}
 	
 	func setUpViews(){
-		
 		addSubview(middleCollectionView)
 		middleCollectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
 		middleCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
@@ -58,14 +61,16 @@ class MiddleCell : UICollectionViewCell {
 			cell.icon.image = tab.icon
 			cell.title.text = tab.title
 			cell.subtitle.text = tab.subtitle
-		}) { (tab,row,collectionview) in
+		}) {(tab,indexPath,cell,collectionview)in
 			
+			guard let _delegate = self.delegate else { return  }
+			_delegate.collectionViewSelected(indexPath, cell: cell, modelData: 0 as AnyObject)
 			
 		}
 		collectionview.contentInset = UIEdgeInsets(top: 0, left: 2, bottom: -1, right: 0)
 		collectionview.showsVerticalScrollIndicator = false
 		collectionview.showsHorizontalScrollIndicator = false
-		collectionview.backgroundColor =  .white //UIColor(hue: 0.95, saturation: 0, brightness: 0.96, alpha: 1.0)
+		collectionview.backgroundColor =  .white 
 		collectionview.translatesAutoresizingMaskIntoConstraints = false
 		return collectionview
 	}()
@@ -81,7 +86,7 @@ class MiddleCellCollectionViewCell : UICollectionViewCell {
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		setUpViews()
-		
+
 		
 	}
 	

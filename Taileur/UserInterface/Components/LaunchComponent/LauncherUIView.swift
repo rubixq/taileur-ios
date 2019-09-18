@@ -28,7 +28,7 @@ class LauncherUIView: UIView {
 	var delegate : LauncherUIViewProtocol!
 	var timer : Timer!
 	static var images : [UIImage]{
-			   return [#imageLiteral(resourceName: "kafdab"),#imageLiteral(resourceName: "image"),#imageLiteral(resourceName: "denxel")]
+			 return [#imageLiteral(resourceName: "fullimage1"),#imageLiteral(resourceName: "fullimage2")]
 	  }
 	
 	
@@ -46,7 +46,10 @@ class LauncherUIView: UIView {
 		addSubview(joinButton)
 		addSubview(descriptionLabel)
 		
-		coverImageView.constrainToSuperViewNoGuide(on: self)
+		coverImageView.pintoTop(superview: self)
+		coverImageView.pintoLeft(superview: self)
+		coverImageView.pintoRight(superview: self)
+		coverImageView.pintoBottom(superview: self)
 		labelStack.centerVerticalToView(coverImageView)
 		labelStack.setTopAnchor(onview: coverImageView, topAnchor: get3DividerHight)
 		
@@ -55,8 +58,11 @@ class LauncherUIView: UIView {
 		joinButton.setWithAnchor(250)
 		joinButton.setHeightAnchor(55)
 		
-		descriptionLabel.constrainBelowView(below: joinButton,topSpace: 30)
 		descriptionLabel.centerVerticalToView(coverImageView)
+		descriptionLabel.pintoTop(superview: joinButton.bottomAnchor,space: 10)
+		descriptionLabel.pintoBottom(superview: bottomAnchor,space: -30)
+
+		backgroundColor = UIColor(hue: 0.5861, saturation: 0.54, brightness: 0.23, alpha: 1.0) /* #1b2a3b */
 
 		
 	}
@@ -74,7 +80,6 @@ class LauncherUIView: UIView {
 		button.layer.cornerRadius = 4
 		return button
 	}()
-	
 	lazy var labelStack: UIStackView = {
 		 let view = UIStackView()
 		  view.axis = .vertical
@@ -87,6 +92,8 @@ class LauncherUIView: UIView {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = "TAILLEUR"
+		label.layer.shadowOpacity = 0.8
+		label.layer.shadowOffset = CGSize(width: 0, height: 0)
 		label.textColor = .white
 		label.font = heavyTitleFont
 		label.textAlignment = .center
@@ -98,8 +105,10 @@ class LauncherUIView: UIView {
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = " - Smart tailor - "
 		label.textAlignment = .center
+		label.layer.shadowOpacity = 0.8
+		label.layer.shadowOffset = CGSize(width: 0, height: 0)
 		label.textColor = .white
-		label.font = regularBoldFont
+		label.font = setFont(name: ".SFUIDisplay-Bold", size: 20)
 		return label
 	}()
 	
@@ -111,6 +120,9 @@ class LauncherUIView: UIView {
 		button.setTitleColor(.white, for: .normal)
 	//	label.textColor = .white
 		//label.font = regularBoldFont
+		button.titleLabel?.layer.shadowOpacity = 0.8
+		button.titleLabel?.layer.shadowOffset = CGSize(width: 0, height: 0)
+		button.titleLabel?.font = setFont(name: ".SFUIDisplay-Bold", size: 22)
 		button.titleLabel?.textAlignment = .center
 		button.isUserInteractionEnabled = true
 		button.addTarget(self, action: #selector(exploreAction), for: .touchUpInside)
@@ -145,12 +157,10 @@ extension LauncherUIView {
 	var get3DividerHight  : CGFloat{
 		return UIScreen.main.bounds.height / 1.6
 	}
-	
-	
 	var loaderSliderTimer: Void{
 		self.timer =  Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: { (_) in
 			print("timer fired")
-			let position = Int.random(in: 0..<3)
+			let position = Int.random(in: 0..<2)
 			print(position)
 			UIView.transition(with: self.coverImageView, duration: 2.0, options: .transitionCrossDissolve, animations: {
 				self.coverImageView.image  = LauncherUIView.images[position]

@@ -35,7 +35,6 @@ class TopCell : UICollectionViewCell{
 	
 	lazy var itemImage : UIImageView = {
 		let imageview = UIImageView()
-	
 		imageview.contentMode = UIView.ContentMode.scaleAspectFill
 		imageview.translatesAutoresizingMaskIntoConstraints = false
 		return imageview
