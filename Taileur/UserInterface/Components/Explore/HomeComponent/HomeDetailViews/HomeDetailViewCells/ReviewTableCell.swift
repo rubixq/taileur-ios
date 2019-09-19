@@ -47,7 +47,7 @@ class ReviewTableCell : UITableViewCell{
 		reviewDots.setWithAnchor(100)
 		reviewDots.pintoTop(superview: topAnchor,space: 20)
 		//reviewDots.pintoLeft(superview: reviewerName.trailingAnchor,space: 20)
-   reviewDots.pintoRight(superview: reviewText.trailingAnchor,space: -30)
+   reviewDots.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -20).isActive = true
 		
 	}
 	
@@ -77,7 +77,7 @@ class ReviewTableCell : UITableViewCell{
 		label.text = "Wonderful jean, perfect gift for my girl for our anniversary!"
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.textColor = .gray
-		label.font = UIFont.init(name: ".SFUIDisplay", size: 17)
+		label.font = UIFont.init(name: ".SFUIDisplay", size: 15)
 		label.numberOfLines = 0 
 		return label
 	}()
