@@ -38,6 +38,7 @@ class HomeViewControllerDetail: UIViewController {
 		tableview.register(TopImageCell.self, forCellReuseIdentifier: "TopImageCell")
 		tableview.register(ProductSummaryCell.self, forCellReuseIdentifier: "ProductSummaryCell")
 		tableview.register(ProductDetailCell.self, forCellReuseIdentifier: "ProductDetailCell")
+		tableview.register(ReviewTableCell.self, forCellReuseIdentifier: "ReviewTableCell")
 		tableview.delegate = self
 		tableview.dataSource = self
 		tableview.backgroundColor = UIColor(hue: 0.95, saturation: 0, brightness: 0.96, alpha: 1.0)
@@ -45,12 +46,15 @@ class HomeViewControllerDetail: UIViewController {
 		tableview.separatorStyle = .none
 		tableview.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
 		tableview.rowHeight = UITableView.automaticDimension
-		
+		tableview.showsHorizontalScrollIndicator = false
+		tableview.showsVerticalScrollIndicator = false
+
 		return tableview
 	}()
 
 	lazy var bottomViewCover: UIView = {
 		let view = UIView()
+		view.addTopBorder(color: UIColor(white: 0.9, alpha: 1), width: view.frame.width)
 		view.backgroundColor = .white  //UIColor(hue: 0.95, saturation: 0, brightness: 0.96, alpha: 1.0)
 		view.translatesAutoresizingMaskIntoConstraints = false
 		return view
@@ -125,7 +129,7 @@ class HomeViewControllerDetail: UIViewController {
 		buyButtom.pintoBottom(superview: bottomViewCover,space: -20)
 		
 		
-		buyButtom.setHeightAnchor(50)
+		buyButtom.setHeightAnchor(45)
 		buyButtom.setWithAnchor(120)
 
 		
@@ -139,11 +143,13 @@ class HomeViewControllerDetail: UIViewController {
 
 extension HomeViewControllerDetail:UITableViewDelegate,UITableViewDataSource{
 	func numberOfSections(in tableView: UITableView) -> Int {
-		return 4
+		return 5
 	}
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		switch section {
 		case 0,1,2,3:
+			return 1
+		case 4 :
 			return 1
 		default:
 			return 0
@@ -163,6 +169,9 @@ extension HomeViewControllerDetail:UITableViewDelegate,UITableViewDataSource{
 		case 2:
 			let cell = tableView.dequeueReusableCell(withIdentifier: "ProductDetailCell", for: indexPath) as! ProductDetailCell
 			return cell
+		case 3:
+			let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTableCell", for: indexPath) as! ReviewTableCell
+			return cell
 		default:
 			return UITableViewCell()
 		}
@@ -175,6 +184,8 @@ extension HomeViewControllerDetail:UITableViewDelegate,UITableViewDataSource{
 			return 140
 		case 2:
 			return 100
+		case 3:
+			return 140
 		default:
 			return 0 
 		}

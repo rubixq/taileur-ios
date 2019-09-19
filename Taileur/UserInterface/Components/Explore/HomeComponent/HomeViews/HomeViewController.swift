@@ -17,7 +17,11 @@ class HomeViewController: UIViewController {
 	var selectedCell = UIView()
 	let transition = TransitionAnimator()
 	
-	var data : [ProductSummary] = [ProductSummary(image: #imageLiteral(resourceName: "kafdab"), name: "Shirt and Trouser", category: "Dress", price: "GHS109"),ProductSummary(image: #imageLiteral(resourceName: "kafdab"), name: "Shirt", category: "Dress", price: "GHS109"),ProductSummary(image: #imageLiteral(resourceName: "kafdab"), name: "Shirt", category: "Dress", price: "GHS109"),ProductSummary(image: #imageLiteral(resourceName: "kafdab"), name: "Shirt", category: "Dress", price: "GHS109"),ProductSummary(image: #imageLiteral(resourceName: "kafdab"), name: "Shirt", category: "Dress", price: "GHS109"),ProductSummary(image: #imageLiteral(resourceName: "kafdab"), name: "Shirt", category: "Dress", price: "GHS109"),ProductSummary(image: #imageLiteral(resourceName: "kafdab"), name: "Shirt", category: "Dress", price: "GHS109"),ProductSummary(image: #imageLiteral(resourceName: "kafdab"), name: "Shirt", category: "Dress", price: "GHS109")]
+	var data : [ProductSummary] = [ProductSummary(image: #imageLiteral(resourceName: "kafdab"), name: "Shirt and Trouser", category: "Dress", price: "GHS 109"),
+																 ProductSummary(image: #imageLiteral(resourceName: "image"), name: "Neka and Jeans", category: "Dress", price: "GHS 231"),
+																 ProductSummary(image: #imageLiteral(resourceName: "denxel"), name: "Kafkan", category: "African", price: "GHS 500"),
+																 ProductSummary(image: #imageLiteral(resourceName: "fullimage2"), name: "Ladies", category: "Female", price: "GHS 1,109"),
+																 ProductSummary(image: #imageLiteral(resourceName: "fullimage1"), name: "Boss Wear", category: "Men", price: "GHS 700")]
 	
 	lazy var homeCollectionView: UICollectionView = {
 		let collection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())

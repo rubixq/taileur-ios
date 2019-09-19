@@ -1,28 +1,28 @@
 PODS:
+  - Cosmos (19.0.3)
   - FloatingPanel (1.6.4)
   - IQKeyboardManagerSwift (6.4.1)
-  - LBTATools (1.0.8)
   - Planet (0.3.1)
 
 DEPENDENCIES:
+  - Cosmos (~> 19.0)
   - FloatingPanel
   - IQKeyboardManagerSwift
-  - LBTATools
   - Planet
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Cosmos
     - FloatingPanel
     - IQKeyboardManagerSwift
-    - LBTATools
     - Planet
 
 SPEC CHECKSUMS:
+  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
   FloatingPanel: 062e0500e3b9848e3eb91595367fc6d579e428df
   IQKeyboardManagerSwift: d2df660d0b8d64a15cb2537c9ff303213fa515b2
-  LBTATools: 913ba0a3fbad250d042368ca2a0f314cdb015de1
   Planet: 8366988beff4e7b86c7530f67ce0172738c6ea24
 
-PODFILE CHECKSUM: 2df8f06654ad84795b729444409761ce895ec2d1
+PODFILE CHECKSUM: 9b79e86c8cf86aabd2ce53422b362df6be00368a
 
 COCOAPODS: 1.5.3

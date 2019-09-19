@@ -42,7 +42,7 @@ class ProductattributeCell: UICollectionViewCell {
 	
 	func setUpViews() {
 		
-		layer.cornerRadius = 25
+		layer.cornerRadius = 22.5
 		layer.borderWidth = 1
 		backgroundColor =   UIColor(hue: 0.95, saturation: 0, brightness: 0.96, alpha: 1.0)
 		addSubview(titleLabel)

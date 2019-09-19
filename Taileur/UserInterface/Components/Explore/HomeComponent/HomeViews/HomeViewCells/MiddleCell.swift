@@ -55,7 +55,11 @@ class MiddleCell : UICollectionViewCell {
 	
 	
 	lazy var middleCollectionView: GenericCollectionView<MiddleData, MiddleCellCollectionViewCell> = {
-		var data : [MiddleData] = [MiddleData(icon: #imageLiteral(resourceName: "designer"), title: "Mark Q", subtitle: "300 Heats"),MiddleData(icon: #imageLiteral(resourceName: "denxel"), title: "Bobby smith Q", subtitle: "300 Heats"),MiddleData(icon: #imageLiteral(resourceName: "designer"), title: "Mark Q", subtitle: "300 Heats"),MiddleData(icon: #imageLiteral(resourceName: "designer"), title: "Mark Q", subtitle: "300 Heats"),MiddleData(icon: #imageLiteral(resourceName: "designer"), title: "Mark Q", subtitle: "300 Heats")]
+		var data : [MiddleData] = [MiddleData(icon: #imageLiteral(resourceName: "designer"), title: "Mark Q", subtitle: "10 Heats"),
+															 MiddleData(icon: #imageLiteral(resourceName: "denxel"), title: "Bobby Smith Q", subtitle: "200 Heats"),
+															 MiddleData(icon: #imageLiteral(resourceName: "designer"), title: "Deaf Jean", subtitle: "78 Heats"),
+															 MiddleData(icon: #imageLiteral(resourceName: "designer"), title: "Origin C", subtitle: "23 Heats"),
+															 MiddleData(icon: #imageLiteral(resourceName: "designer"), title: "Loner", subtitle: "21 Heats")]
 		let collectionview = GenericCollectionView.init(frame: .zero, layout: middleLayout, items: data, configure: { (cell : MiddleCellCollectionViewCell, tab,index) in
 			
 			cell.icon.image = tab.icon

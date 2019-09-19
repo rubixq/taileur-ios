@@ -28,6 +28,7 @@
 		484BCCC32332EBD60045EAEF /* ProductattributeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BCCC22332EBD60045EAEF /* ProductattributeCell.swift */; };
 		484BCCC52332F3180045EAEF /* CustomHomeDetailTableviewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BCCC42332F3180045EAEF /* CustomHomeDetailTableviewHeader.swift */; };
 		484BCCC72332F5AD0045EAEF /* ProductDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BCCC62332F5AD0045EAEF /* ProductDetailCell.swift */; };
+		484BCCC923334EEA0045EAEF /* ReviewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BCCC823334EEA0045EAEF /* ReviewTableCell.swift */; };
 		485CE4172317AEB100AB2CFB /* BottomSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4162317AEB100AB2CFB /* BottomSliderViewController.swift */; };
 		485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE4192317AEEA00AB2CFB /* GenericTableView.swift */; };
 		485CE41C2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CE41B2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift */; };
@@ -99,6 +100,7 @@
 		484BCCC22332EBD60045EAEF /* ProductattributeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductattributeCell.swift; sourceTree = "<group>"; };
 		484BCCC42332F3180045EAEF /* CustomHomeDetailTableviewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHomeDetailTableviewHeader.swift; sourceTree = "<group>"; };
 		484BCCC62332F5AD0045EAEF /* ProductDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailCell.swift; sourceTree = "<group>"; };
+		484BCCC823334EEA0045EAEF /* ReviewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableCell.swift; sourceTree = "<group>"; };
 		485CE4162317AEB100AB2CFB /* BottomSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSliderViewController.swift; sourceTree = "<group>"; };
 		485CE4192317AEEA00AB2CFB /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
 		485CE41B2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				484BCCC22332EBD60045EAEF /* ProductattributeCell.swift */,
 				484BCCC42332F3180045EAEF /* CustomHomeDetailTableviewHeader.swift */,
 				484BCCC62332F5AD0045EAEF /* ProductDetailCell.swift */,
+				484BCCC823334EEA0045EAEF /* ReviewTableCell.swift */,
 			);
 			path = HomeDetailViewCells;
 			sourceTree = "<group>";
@@ -557,16 +560,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Taileur/Pods-Taileur-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/LBTATools/LBTATools.framework",
 				"${BUILT_PRODUCTS_DIR}/Planet/Planet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatingPanel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBTATools.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Planet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,6 +663,7 @@
 				485CE41C2317AF4900AB2CFB /* ThreeViewsTableViewCell.swift in Sources */,
 				48CB06C0232BCEFF008CF4C2 /* GenericCollectionView.swift in Sources */,
 				485CE41A2317AEEA00AB2CFB /* GenericTableView.swift in Sources */,
+				484BCCC923334EEA0045EAEF /* ReviewTableCell.swift in Sources */,
 				4804B26623165CEB00247511 /* LauncherUIView.swift in Sources */,
 				48F52E4422F9776400D07E2E /* AppDelegate.swift in Sources */,
 				484BCCB8233215B10045EAEF /* TransitionAnimator.swift in Sources */,

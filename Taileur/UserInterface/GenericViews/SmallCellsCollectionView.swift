@@ -61,7 +61,7 @@ class SmallCellsCollectionView<T, Cell: UICollectionViewCell>: UICollectionView,
 		let lay = collectionViewLayout as! UICollectionViewFlowLayout
 		let widthPerItem = (collectionView.frame.width / 2) - lay.minimumInteritemSpacing
 		//		print("collectionView.frame.width \(collectionView.frame.width)")
-		return CGSize(width: widthPerItem, height:50)
+		return CGSize(width: widthPerItem, height:45)
 	}
 	
 	
