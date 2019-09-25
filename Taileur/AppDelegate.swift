@@ -18,34 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.backgroundColor = .white
-	/**	UINavigationBar.appearance().barTintColor = .red
-		UINavigationBar.appearance().tintColor = .white
-		UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-		UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-**/
-		window?.rootViewController = UINavigationController(rootViewController: LaunchViewController())
+	  window?.rootViewController = UINavigationController(rootViewController: LaunchViewController())
 		window?.makeKeyAndVisible()
 		IQKeyboardManager.shared.enable = true
-		
-	
-
 		return true
 	}
 
-	func applicationWillResignActive(_ application: UIApplication) {
-	
-	}
-
-	func applicationDidEnterBackground(_ application: UIApplication) {
-		
-	}
-
-	func applicationWillEnterForeground(_ application: UIApplication) {
-	}
-
-	func applicationDidBecomeActive(_ application: UIApplication) {
-		
-	}
 
 	func applicationWillTerminate(_ application: UIApplication) {
 		self.saveContext()
