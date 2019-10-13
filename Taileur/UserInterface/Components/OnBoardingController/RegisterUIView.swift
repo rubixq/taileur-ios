@@ -123,7 +123,7 @@ class RegisterUIView: UIView {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = " Sign Up to continue"
-		label.font = setFont(name: ".SFUIDisplay", size: 16)
+		label.font = UIFont.systemFont(ofSize: 16,weight: .regular)
 		label.textColor = .gray
 		return label
 	}()
@@ -209,7 +209,7 @@ class RegisterUIView: UIView {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = "- OR -"
-		label.font = setFont(name: ".SFUIDisplay-Bold", size: 16)
+		label.font = UIFont.systemFont(ofSize: 16,weight: .bold)
 		label.textColor = .black
 		label.textAlignment = .center
 		return label

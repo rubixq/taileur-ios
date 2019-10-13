@@ -61,6 +61,7 @@ class HomeViewController: UIViewController {
 	func presentDetailView(){
 		let navigationController = UINavigationController(rootViewController: HomeViewControllerDetail())
 		navigationController.transitioningDelegate = self
+		navigationController.modalPresentationStyle = .fullScreen
 		self.present(navigationController, animated: true, completion: nil)
 	}
 	

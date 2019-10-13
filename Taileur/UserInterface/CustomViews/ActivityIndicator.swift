@@ -33,7 +33,7 @@ class ActivityIndicator : UIView {
 	lazy var indicatorTitle : UILabel = {
 		let label = UILabel()
 		label.text = "Loading"
-		label.font = UIFont.init(name: ".SFUIDisplay-Bold", size: 20)
+		label.font = UIFont.systemFont(ofSize: 20,weight: .bold)
 		label.textAlignment = .center
 		label.translatesAutoresizingMaskIntoConstraints = false
 		return label
@@ -44,7 +44,8 @@ class ActivityIndicator : UIView {
 		let label = UILabel()
 		label.text = "Please wait"
 		label.textAlignment = .center
-		label.font = UIFont.init(name: ".SFUIDisplay-Regular", size: 19)
+		label.font = UIFont.systemFont(ofSize: 19,weight: .regular)
+			
 		label.translatesAutoresizingMaskIntoConstraints = false
 		return  label
 		

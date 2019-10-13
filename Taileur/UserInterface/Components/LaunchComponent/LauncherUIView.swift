@@ -108,7 +108,7 @@ class LauncherUIView: UIView {
 		label.layer.shadowOpacity = 0.8
 		label.layer.shadowOffset = CGSize(width: 0, height: 0)
 		label.textColor = .white
-		label.font = setFont(name: ".SFUIDisplay-Bold", size: 20)
+		label.font = UIFont.systemFont(ofSize: 20,weight: .bold)
 		return label
 	}()
 	
@@ -122,7 +122,7 @@ class LauncherUIView: UIView {
 		//label.font = regularBoldFont
 		button.titleLabel?.layer.shadowOpacity = 0.8
 		button.titleLabel?.layer.shadowOffset = CGSize(width: 0, height: 0)
-		button.titleLabel?.font = setFont(name: ".SFUIDisplay-Bold", size: 22)
+		button.titleLabel?.font = UIFont.systemFont(ofSize: 22,weight: .bold)
 		button.titleLabel?.textAlignment = .center
 		button.isUserInteractionEnabled = true
 		button.addTarget(self, action: #selector(exploreAction), for: .touchUpInside)

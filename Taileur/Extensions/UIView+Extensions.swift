@@ -11,29 +11,29 @@ import UIKit
 extension UIView {
 	
 	var heavyTitleFont : UIFont {
-		return UIFont.init(name: ".SFUIDisplay-Heavy", size: 40) ?? UIFont.systemFont(ofSize: 20)
+		return  UIFont.systemFont(ofSize: 40,weight: .heavy)
 	}
 	var bigTitleFont : UIFont {
-		return UIFont.init(name: ".SFUIDisplay-Bold", size: 35) ?? UIFont.systemFont(ofSize: 20)
+		return  UIFont.systemFont(ofSize: 35,weight: .bold)
 	}
 	var mediumFont : UIFont {
-		return UIFont.init(name: ".SFUIDisplay-Medium", size: 20) ?? UIFont.systemFont(ofSize: 18)
+		return  UIFont.systemFont(ofSize: 20,weight: .medium)
 	}
 	
 	var regularBoldFont : UIFont {
-		return UIFont.init(name: ".SFUIDisplay-Bold", size: 16) ?? UIFont.systemFont(ofSize: 16)
+		return  UIFont.systemFont(ofSize: 16,weight: .bold)
 	}
 	
 	var regularButtonFont : UIFont {
-		return UIFont.init(name: ".SFUIDisplay", size: 18) ?? UIFont.systemFont(ofSize: 18)
+		return  UIFont.systemFont(ofSize: 18,weight: .regular)
 	}
 	
 	
 	var regularFont : UIFont {
-		return UIFont.init(name: ".SFUIDisplay", size: 17) ?? UIFont.systemFont(ofSize: 17)
+		return UIFont.systemFont(ofSize: 17)
 	}
 	var mediumFont18 : UIFont {
-		return UIFont.init(name: ".SFUIDisplay-Medium", size: 18) ?? UIFont.systemFont(ofSize: 18)
+		return  UIFont.systemFont(ofSize: 18,weight: .bold)
 	}
 	
 	func setFont(name: String,size : CGFloat) -> UIFont{

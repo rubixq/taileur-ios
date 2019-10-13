@@ -99,9 +99,8 @@ class UserProfileSubView: UIView {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = "While we do our verification please take a minute to complete your profile"
-		label.font = setFont(name: ".SFUIDisplay-Thin", size: 17)
+		label.font = UIFont.systemFont(ofSize: 17,weight: .thin)
 		label.numberOfLines = 0
-		//label.font =  setFont(name: ".SFUIDisplay", size: 24)
 		return label
 	}()
 	
@@ -109,7 +108,7 @@ class UserProfileSubView: UIView {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = "Username"
-		label.font =  setFont(name: ".SFUIDisplay", size: 24)
+		label.font =  UIFont.systemFont(ofSize: 24,weight: .regular)
 		return label
 	}()
 	
@@ -117,7 +116,7 @@ class UserProfileSubView: UIView {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = "Set country"
-		label.font =  setFont(name: ".SFUIDisplay", size: 17)
+		label.font =  UIFont.systemFont(ofSize: 17,weight: .regular)
 		return label
 	}()
 	

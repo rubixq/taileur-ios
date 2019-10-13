@@ -49,7 +49,7 @@ extension LaunchViewController: BottomSliderViewControllerProtocol{
 		
 		let loginView = LoginUIView()
 		let controller = OnBoardingViewController()
-	     	controller.loginView = loginView
+			 controller.loginView = loginView
 		    controller.mode = .login
 		self.navigationController?.show(controller, sender: self)
 	}

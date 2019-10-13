@@ -44,7 +44,7 @@ class ProductSummaryCell : UITableViewCell {
 	
 	lazy var titleLabel: UILabel = {
 		let label  = UILabel()
-		label.font = UIFont.init(name: ".SFUIDisplay-Bold", size: 18)
+		label.font = UIFont.systemFont(ofSize: 18,weight: .bold)
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.numberOfLines = 0
 		return label

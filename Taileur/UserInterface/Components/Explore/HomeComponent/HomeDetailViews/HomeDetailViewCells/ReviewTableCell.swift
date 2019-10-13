@@ -77,7 +77,7 @@ class ReviewTableCell : UITableViewCell{
 		label.text = "Wonderful jean, perfect gift for my girl for our anniversary!"
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.textColor = .gray
-		label.font = UIFont.init(name: ".SFUIDisplay", size: 15)
+		label.font = UIFont.systemFont(ofSize: 15,weight: .regular)
 		label.numberOfLines = 0 
 		return label
 	}()

@@ -25,7 +25,7 @@ class ProductDetailCell : UITableViewCell{
 		label.numberOfLines = 0
 		label.textAlignment = .left
 		label.textColor = .gray
-    label.font = UIFont.init(name: ".SFUIDisplay", size: 17)
+      label.font = UIFont.systemFont(ofSize: 17,weight: .regular)
 		label.text = "The vintage-inspired floral design featured on this by-the-yard fabric is just as awe-inspiring as a beautiful meadow."
 		return label
 	}()

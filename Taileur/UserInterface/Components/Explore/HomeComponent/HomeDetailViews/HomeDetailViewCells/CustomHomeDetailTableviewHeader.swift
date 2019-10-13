@@ -45,7 +45,7 @@ class CustomHomeDetailTableviewHeader: UITableViewHeaderFooterView {
 	}()
 	lazy var headerTitle: UILabel = {
 		let label = UILabel()
-		label.font = UIFont.init(name: ".SFUIDisplay-Bold", size: 16)
+		label.font = UIFont.systemFont(ofSize: 16,weight: .bold)
 		label.translatesAutoresizingMaskIntoConstraints = false
 		return label
 	}()

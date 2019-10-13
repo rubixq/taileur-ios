@@ -64,9 +64,9 @@ class ThreeViewsTableViewCell: UITableViewCell {
 	lazy var subtitleLabel: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
-		label.font =  setFont(name: ".SFUIDisplay-Thin", size: 16)
+		label.font =  UIFont.systemFont(ofSize: 16,weight: .thin)
 		label.textAlignment = .left
-   label.textColor = UIColor.gray
+       label.textColor = UIColor.gray
 		label.text = "Ghana"
 		return label
 	}()

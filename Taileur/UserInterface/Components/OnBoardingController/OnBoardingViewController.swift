@@ -112,7 +112,9 @@ extension OnBoardingViewController : OnBoardingProtocol {
 		appDelegate?.window?.makeKeyAndVisible()
 	}
 	func showCountryPicker() {
-		self.show(UINavigationController(rootViewController: countryPicker), sender: self)
+		 let navigationBar = UINavigationController(rootViewController: countryPicker)
+		navigationBar.modalPresentationStyle = .fullScreen
+		self.show(navigationBar, sender: self)
 	}
 	
 }

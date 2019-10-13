@@ -145,7 +145,7 @@ class BottomCellCollectionViewCell : UICollectionViewCell {
 
 		stack.pintoLeft(superview: itemImage)
 		stack.pintoTop(superview: itemImage.bottomAnchor,space: -2)
-	  stack.pintoRight(superview: self)
+	   stack.pintoRight(superview: self)
 		
 		
 	}

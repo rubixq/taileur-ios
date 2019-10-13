@@ -132,7 +132,7 @@ class LoginUIView: UIView {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = " Sign In to continue"
-		label.font = setFont(name: ".SFUIDisplay", size: 16)
+		label.font = UIFont.systemFont(ofSize: 16)
 		label.textColor = .gray
 		return label
 	}()
@@ -209,7 +209,6 @@ class LoginUIView: UIView {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setTitle("Forgot Password?", for: .normal)
 		button.titleLabel?.font = regularFont
-		//button.backgroundColor = .red
 		button.setTitleColor(.gray, for: .normal)
 		button.setTitleColor(.lightGray, for: .highlighted)
 		button.setTitleColor(.lightGray, for: .focused)
@@ -237,7 +236,7 @@ class LoginUIView: UIView {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = "- OR -"
-		label.font = setFont(name: ".SFUIDisplay-Bold", size: 16)
+		label.font = UIFont.systemFont(ofSize: 16,weight: .bold)
 		label.textColor = .black
 		label.textAlignment = .center
 		return label
@@ -265,7 +264,7 @@ class LoginUIView: UIView {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setTitle("Click here to Sign Up !", for: .normal)
 		button.titleLabel?.font = regularFont
-		//button.backgroundColor = .red
+		
 		button.setTitleColor(.gray, for: .normal)
 		button.setTitleColor(.lightGray, for: .highlighted)
 		button.setTitleColor(.lightGray, for: .focused)

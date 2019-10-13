@@ -190,7 +190,6 @@ extension HomeViewControllerDetail:UITableViewDelegate,UITableViewDataSource{
 			return 0 
 		}
 	}
-	
 	 func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 		switch section {
 		case 2:

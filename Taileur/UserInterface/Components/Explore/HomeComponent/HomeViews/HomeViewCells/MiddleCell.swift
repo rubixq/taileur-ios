@@ -133,7 +133,7 @@ class MiddleCellCollectionViewCell : UICollectionViewCell {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.text = " Sign In to continue"
-		label.font = setFont(name: ".SFUIDisplay", size: 15)
+		label.font = UIFont.systemFont(ofSize: 16)
 		label.textColor = .gray
 		return label
 	}()

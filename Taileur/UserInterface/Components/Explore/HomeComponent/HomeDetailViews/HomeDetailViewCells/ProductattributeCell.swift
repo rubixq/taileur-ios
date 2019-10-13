@@ -17,7 +17,7 @@ class ProductattributeCell: UICollectionViewCell {
 		label.textAlignment = .center
 		label.adjustsFontSizeToFitWidth = true
 		label.sizeToFit()
-		label.font = UIFont.init(name: ".SFUIDisplay", size: 17)
+		label.font = UIFont.systemFont(ofSize: 17,weight: .regular)
 		return label
 	}()
 	
