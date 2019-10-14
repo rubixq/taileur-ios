@@ -48,9 +48,6 @@ class DataStorage {
 		return decodedData
 	}
 	
-
-	
-	
 	static func clearAllCache(){
 		defaults.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
 		defaults.synchronize()

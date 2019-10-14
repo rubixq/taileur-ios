@@ -10,17 +10,25 @@ import UIKit
 
 class RegisterUIView: UIView {
 	
-	var controls = UIControls()
-	var viewModel : OnBoardModel!
+	var viewModel : OnBoardViewModelImpl!
+	var model : OnBoardModel!
 	var delegate : OnBoardingProtocol!
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		
 		setupViews()
-		viewModel = OnBoardModel()
+		model = OnBoardModel()
 		setValues()
 		
 	}
+	init(frame: CGRect = .zero,onboardViewModel: OnBoardViewModelImpl) {
+		super.init(frame: frame)
+		setupViews()
+		viewModel = onboardViewModel
+		model = OnBoardModel()
+		setValues()
+		
+	}
+	
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
@@ -36,6 +44,7 @@ class RegisterUIView: UIView {
 		phoneNumberFieldStack.addArrangedSubview(phoneNumberField)
 		phoneNumberStack.addArrangedSubview(phoneNumberFieldStack)
 		addSubview(phoneNumberStack)
+		addSubview(passwordField)
 		
 		addSubview(signInButon)
 		addSubview(orLabel)
@@ -43,12 +52,18 @@ class RegisterUIView: UIView {
 		addSubview(registerButton)
 		
 		stack.constraintoTop(superview: self,topSpace: 30,leadingSpace: 30,trailingSpace: -30)
-		//stack.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 30).isActive = true
 		
-		phoneNumberStack.topAnchor.constraint(equalTo: stack.bottomAnchor,constant: 100).isActive = true
+		phoneNumberStack.topAnchor.constraint(equalTo: stack.bottomAnchor,constant: 50).isActive = true
 		phoneNumberStack.leadingAnchor.constraint(equalTo: stack.leadingAnchor).isActive = true
 		
-		phoneNumberFieldStack.setHeightAnchor(40)
+		passwordField.topAnchor.constraint(equalTo: phoneNumberStack.bottomAnchor,constant: 30).isActive = true
+		passwordField.leadingAnchor.constraint(equalTo: stack.leadingAnchor).isActive = true
+	   passwordField.trailingAnchor.constraint(equalTo: stack.trailingAnchor,constant: -30).isActive = true
+
+		passwordField.addBottomBorder(color: .lightGray, width: passwordField.frame.width)
+      passwordField.setHeightAnchor(40)
+		
+		phoneNumberFieldStack.setHeightAnchor(45)
 		flagIcon.setWithAnchor(30)
 		flagIcon.setHeightAnchor(30)
 		
@@ -63,7 +78,7 @@ class RegisterUIView: UIView {
 		
 		
 		
-		signInButon.topAnchor.constraint(equalTo: phoneNumberStack.bottomAnchor,constant: 50).isActive = true
+		signInButon.topAnchor.constraint(equalTo: passwordField.bottomAnchor,constant: 50).isActive = true
 		signInButon.setHeightAnchor(54)
 		signInButon.trailingAnchor.constraint(equalTo: phoneNumberStack.trailingAnchor).isActive = true
 		signInButon.leadingAnchor.constraint(equalTo: phoneNumberStack.leadingAnchor).isActive = true
@@ -86,13 +101,38 @@ class RegisterUIView: UIView {
 		
 	}
 	func setValues(){
-		let country = viewModel.defaultCountry()
+		let country = model.defaultCountry()
 		flagIcon.image = country.image
 		codeField.text = country.callingCode
-		
 	}
 	
-	
+	@objc func continueRegistration(){
+		let countryCode = codeField.text
+		let phoneNumber = phoneNumberField.text
+		let password = passwordField.text
+		
+		var requestParams = OnboardRequestParameter()
+		requestParams.countryCode = countryCode
+		requestParams.phoneNumber = phoneNumber
+		requestParams.locale = Locale.current.regionCode
+		requestParams.password = password
+		requestParams.userType = viewModel.onboardingRequestParams?.userType
+		requestParams.onboardMode = .register
+		
+		
+		viewModel.onboardingRequestParams = requestParams
+		viewModel.registerUserAPICall(
+		  { (response) in
+			
+		}) { [weak self] (error) in
+			guard let navicontroller = self?.parentContainerViewController()?.navigationController else {  return }
+			NotificationBanner(parentView: navicontroller,
+									 title: "Error",
+									 message: error.readable,
+									 bannerType: .error).show()
+		}
+		
+	}
 	@objc func showLoginView(){
 		guard let _delegate = delegate else { return  }
 		_delegate.showLogin()
@@ -166,6 +206,14 @@ class RegisterUIView: UIView {
 		return field
 	}()
 	
+	lazy var passwordField: UITextField = {
+		let field = UITextField()
+		field.translatesAutoresizingMaskIntoConstraints = false
+		field.keyboardType = .default
+		field.placeholder = "Choose password"
+		field.isSecureTextEntry = true
+		return field
+	}()
 	
 	
 	
@@ -199,7 +247,7 @@ class RegisterUIView: UIView {
 		button.setTitleColor(.white, for: .normal)
 		button.setTitleColor(.lightGray, for: .highlighted)
 		button.setTitleColor(.lightGray, for: .focused)
-		//button.addTarget(self, action: #selector(joinNowAction), for: .touchUpInside)
+		button.addTarget(self, action: #selector(continueRegistration), for: .touchUpInside)
 		button.layer.cornerRadius = 4
 		return button
 	}()

@@ -12,12 +12,13 @@ class LaunchViewController: UIViewController {
 
 	
 	var mainView : LauncherUIView!
-	
+	var viewModel : OnBoardViewModelImpl!
     override func viewDidLoad() {
         super.viewDidLoad()
 			  hideNavigationBar
-        mainView = LauncherUIView()
+           mainView = LauncherUIView()
 			  mainView.delegate = self
+		     viewModel = OnBoardViewModelImpl()
     }
 	
 	
@@ -46,8 +47,9 @@ class LaunchViewController: UIViewController {
 
 extension LaunchViewController: BottomSliderViewControllerProtocol{
 	func itemSelected(item: BottomSheetItem) {
-		
-		let loginView = LoginUIView()
+		viewModel.setUserType(item.title)
+		viewModel.setOnBoardMode(.login)
+		let loginView = LoginUIView(onboardViewModel: viewModel)
 		let controller = OnBoardingViewController()
 			 controller.loginView = loginView
 		    controller.mode = .login
@@ -64,7 +66,7 @@ extension LaunchViewController: LauncherUIViewProtocol {
 		let appDelegate = UIApplication.shared.delegate as? AppDelegate
 		appDelegate?.window?.rootViewController = ExploreTabViewController()
 		appDelegate?.window?.makeKeyAndVisible()
-		
+	 
 	}
 	
 	

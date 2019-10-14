@@ -59,7 +59,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "26CB8628-99FD-48A5-A85C-C3FDE85FE33D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Taileur/UserInterface/Components/LaunchComponent/LauncherUIView.swift"
@@ -76,7 +76,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4FEA5522-744D-4843-9CC3-C0507CA9D40C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Taileur/UserInterface/Components/LaunchComponent/LauncherUIView.swift"
@@ -86,6 +86,181 @@
             startingLineNumber = "150"
             endingLineNumber = "150"
             landmarkName = "exploreAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B59611FF-43A6-4D4C-9425-22ABBE846761"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Taileur/AppModules/OnBoardingModule/Views/subViews/RegisterUIView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "continueRegistration()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ABAD0ECD-DF57-4D48-9E7E-7022D43E543C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Taileur/AppModules/OnBoardingModule/Views/subViews/RegisterUIView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "continueRegistration()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5897877E-9272-4915-BA6B-10C707C3017B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Taileur/AppModules/OnBoardingModule/Views/subViews/RegisterUIView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "continueRegistration()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E25C648-674D-472F-B472-8062C70559F4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "registerUserAPICall(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9E25C648-674D-472F-B472-8062C70559F4 - 72315fe28038397e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "Taileur"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "9E25C648-674D-472F-B472-8062C70559F4 - 72315fe28038397e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "Taileur"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1444">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "registerUserAPICall(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE - b06a172d47b2c79e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Taileur.RegisterResponse, Taileur.APIError&gt;) -&gt; () in Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "Taileur"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE - b06a172d47b2c79e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Taileur.RegisterResponse, Taileur.APIError&gt;) -&gt; () in Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "Taileur"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE - b06a172d47b2c79e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Taileur.RegisterResponse, Taileur.APIError&gt;) -&gt; () in Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "Taileur"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "320">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC1F0F6D-6070-4997-ABE1-CFAC9A2601CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "registerUserAPICall(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

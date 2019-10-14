@@ -140,7 +140,7 @@ extension UIView{
 		self.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: leadingSpace).isActive = true
 		self.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: tralingSpace).isActive = true
 		if withBottomAchor {
-			self.bottomAnchor.constraint(equalTo: self.bottomAnchor,constant: bottomSpace).isActive = true
+		self.bottomAnchor.constraint(equalTo: self.bottomAnchor,constant: bottomSpace).isActive = true
 		}
 		
 	}

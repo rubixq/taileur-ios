@@ -17,10 +17,6 @@ protocol OnBoardingProtocol {
 	func showCountryPicker()
 }
 
-enum OnboardMode {
-	case register
-	case login
-}
 
 class OnBoardingViewController: UIViewController {
 	let countryPicker = CountryPickerViewController()
@@ -30,11 +26,10 @@ class OnBoardingViewController: UIViewController {
 	
    override func viewDidLoad() {
 			super.viewDidLoad()
-		  self.view.backgroundColor = .white
-	   	loginView = LoginUIView()
+		   self.view.backgroundColor = .white
 		  loginView.tag = 202
 		  loginView.delegate = self
-		  registerView = RegisterUIView()
+		  registerView = RegisterUIView(onboardViewModel: loginView.viewModel)
 		  registerView.delegate = self
 		  countryPicker.delegate = self
 		

@@ -13,17 +13,27 @@ import UIKit
 
 class LoginUIView: UIView {
 
-	var controls = UIControls()
-	var viewModel : OnBoardModel!
+	var viewModel : OnBoardViewModelImpl!
+	var model : OnBoardModel!
 	var delegate : OnBoardingProtocol!
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		
 		setupViews()
-		viewModel = OnBoardModel()
+		model = OnBoardModel()
 		setValues()
 		
 	}
+	init(frame: CGRect = .zero,onboardViewModel: OnBoardViewModelImpl) {
+		super.init(frame: frame)
+		setupViews()
+		viewModel = onboardViewModel
+		model = OnBoardModel()
+		setValues()
+		print("onboard mode : ",viewModel.onboardingRequestParams)
+	}
+	
+	
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
@@ -63,11 +73,11 @@ class LoginUIView: UIView {
 		codeField.setWithAnchor(50)
 		codeField.addBottomBorder(color: .lightGray, width: codeField.frame.width + 13)
 		
-		passWord.topAnchor.constraint(equalTo: phoneNumberStack.bottomAnchor,constant: 50).isActive = true
+		passWord.topAnchor.constraint(equalTo: phoneNumberStack.bottomAnchor,constant: 30).isActive = true
 		passWord.leadingAnchor.constraint(equalTo: stack.leadingAnchor).isActive = true
 		passWord.trailingAnchor.constraint(equalTo: stack.trailingAnchor,constant: -30).isActive = true
 		passWord.addBottomBorder(color: .lightGray, width: passWord.frame.width)
-		passWord.setHeightAnchor(30)
+		passWord.setHeightAnchor(40)
 		
 		forgotPasswordButton.topAnchor.constraint(equalTo: passWord.bottomAnchor,constant: 10).isActive = true
 		forgotPasswordButton.setHeightAnchor(40)
@@ -96,7 +106,7 @@ class LoginUIView: UIView {
 		
 	}
 	func setValues(){
-		let country = viewModel.defaultCountry()
+		let country = model.defaultCountry()
 		flagIcon.image = country.image
 		codeField.text = country.callingCode
 		

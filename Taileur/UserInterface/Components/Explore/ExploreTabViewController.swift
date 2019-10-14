@@ -16,9 +16,6 @@ class ExploreTabViewController: UITabBarController {
         setUpView()
     }
     
-
-	
-	
 	
 	func setUpView(){
 		

@@ -26,13 +26,13 @@ class BottomSliderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 			
-			
-			 bottomSheetItems = [BottomSheetItem(title: "Shopper",
+			  bottomSheetItems =                  [BottomSheetItem(title: "Shopper",
 																					 icon: #imageLiteral(resourceName: "shopper"),
 																					 subtitle: "Explore and buy on our worldwide"),
-													 BottomSheetItem(title: "Fashion Designer",
-												                  icon: #imageLiteral(resourceName: "designer"),
-												                  subtitle: "Create and showcase your products")]
+															  
+													          BottomSheetItem(title: "Fashion Designer",
+												                             icon: #imageLiteral(resourceName: "designer"),
+																					  subtitle: "Create and showcase your products")]
         
     }
 	
@@ -62,19 +62,18 @@ class BottomSliderViewController: UIViewController {
 	}()
 	
 	
-	
 	lazy var bottomSheetTableView : GenericTableView<BottomSheetItem, ThreeViewsTableViewCell> = {
-		let tableview = GenericTableView.init(items: bottomSheetItems, configure: { (cell : ThreeViewsTableViewCell, item) in
+	 let tableview = GenericTableView.init(items: bottomSheetItems, configure: { (cell : ThreeViewsTableViewCell, item) in
 			cell.titleLabel.text = item.title
 			cell.subtitleLabel.text = item.subtitle
 			cell.iconImage.image = item.icon
 		},selectHandler: { (item, cell) in
-			print(item)
+			
 			guard let _delegate = self.delegate else { return }
 			_delegate.itemSelected(item: item)
 			self.dismiss(animated: true)
 		  })
-		//tableview.backgroundColor = .reds
+		
 		return tableview
 	}()
 

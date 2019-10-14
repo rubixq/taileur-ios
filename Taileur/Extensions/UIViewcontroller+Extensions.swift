@@ -65,7 +65,6 @@ extension UIViewController {
 		self.present(alert, animated: true, completion: nil)
 		
 	}
-	
 	func showWarningDialog(with title : String,and message : String){
 		
 		let alert = 	UIAlertController(title: title, message: message, preferredStyle: .alert)
