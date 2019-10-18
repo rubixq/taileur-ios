@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol UserProfileSubViewProtocol{
+	func selectedAction(_ profileItem : UserProfileCellItem)
+}
+
 struct UserProfileCellItem{
 	var icon : UIImage
 	var title : String
@@ -15,6 +19,7 @@ struct UserProfileCellItem{
 
 class UserProfileSubView: UIView {
 
+	var delegate : UserProfileSubViewProtocol!
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		
@@ -86,10 +91,9 @@ class UserProfileSubView: UIView {
 		let imageView = UIImageView()
 		imageView.translatesAutoresizingMaskIntoConstraints = false
 		imageView.contentMode = UIView.ContentMode.center
-    imageView.image = #imageLiteral(resourceName: "profilepicture")
-	//	imageView.contentMode = .scaleAspectFill
+      imageView.image = #imageLiteral(resourceName: "profilepicture")
 		imageView.layer.cornerRadius = 50
-		imageView.layer.borderColor =  UIColor.red.cgColor //UIColor(red: 0.8588, green: 0.8588, blue: 0.8588, alpha: 1.0).cgColor
+		imageView.layer.borderColor =  UIColor.red.cgColor
 		imageView.layer.borderWidth = 0.5
 		imageView.clipsToBounds = true
 		return imageView
@@ -134,6 +138,7 @@ class UserProfileSubView: UIView {
 	lazy var topView: UIView = {
 		let view = UIView()
 		view.translatesAutoresizingMaskIntoConstraints = false
+		
 		return view
 	}()
 	
@@ -143,7 +148,7 @@ class UserProfileSubView: UIView {
 		items.append(UserProfileCellItem(icon: #imageLiteral(resourceName: "edit"), title: "Profile & Experience"))
 		items.append(UserProfileCellItem(icon: #imageLiteral(resourceName: "review"), title: "Reviews"))
 		items.append(UserProfileCellItem(icon: #imageLiteral(resourceName: "lookbook"), title: "Look Book"))
-		items.append(UserProfileCellItem(icon: #imageLiteral(resourceName: "package"), title: "All Readry Made to Go"))
+		items.append(UserProfileCellItem(icon: #imageLiteral(resourceName: "package"), title: "All Ready Made to Go"))
 		items.append(UserProfileCellItem(icon: #imageLiteral(resourceName: "tracker"), title: "Progress Tracker"))
 		return items
 	}()
@@ -156,9 +161,11 @@ class UserProfileSubView: UIView {
 			cell.iconImage.image = item.icon
 		},selectHandler: { (item, cell) in
 			
+			guard let _delegate = self.delegate else { return }
+			_delegate.selectedAction(item)
 		})
-		//tableview.isScrollEnabled = false
-		//tableview.backgroundColor = .reds
+		
+		tableview.isScrollEnabled = false 
 		return tableview
 	}()
 }

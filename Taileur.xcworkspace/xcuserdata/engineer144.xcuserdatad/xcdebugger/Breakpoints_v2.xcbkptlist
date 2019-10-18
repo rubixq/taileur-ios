@@ -153,34 +153,34 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "9E25C648-674D-472F-B472-8062C70559F4 - 72315fe28038397e"
+                  uuid = "9E25C648-674D-472F-B472-8062C70559F4 - 50ab25248ccb2cad"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
-                  moduleName = "Taileur"
+                  symbolName = "OrijinTailor.OnBoardViewModelImpl.registerUserAPICall((OrijinTailor.RegisterResponse) -&gt; (), (OrijinTailor.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "OrijinTailor"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
                   endingLineNumber = "47"
-                  offsetFromSymbolStart = "632">
+                  offsetFromSymbolStart = "891">
                </Location>
                <Location
-                  uuid = "9E25C648-674D-472F-B472-8062C70559F4 - 72315fe28038397e"
+                  uuid = "9E25C648-674D-472F-B472-8062C70559F4 - 50ab25248ccb2cad"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
-                  moduleName = "Taileur"
+                  symbolName = "OrijinTailor.OnBoardViewModelImpl.registerUserAPICall((OrijinTailor.RegisterResponse) -&gt; (), (OrijinTailor.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "OrijinTailor"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
                   endingLineNumber = "47"
-                  offsetFromSymbolStart = "1444">
+                  offsetFromSymbolStart = "1884">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -201,49 +201,49 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE - b06a172d47b2c79e"
+                  uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE - 4e2b8cb43ba025b1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Taileur.RegisterResponse, Taileur.APIError&gt;) -&gt; () in Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
-                  moduleName = "Taileur"
+                  symbolName = "closure #1 (Swift.Result&lt;OrijinTailor.RegisterResponse, OrijinTailor.APIError&gt;) -&gt; () in OrijinTailor.OnBoardViewModelImpl.registerUserAPICall((OrijinTailor.RegisterResponse) -&gt; (), (OrijinTailor.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "OrijinTailor"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
-                  offsetFromSymbolStart = "192">
+                  offsetFromSymbolStart = "242">
                </Location>
                <Location
-                  uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE - b06a172d47b2c79e"
+                  uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE - 4e2b8cb43ba025b1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Taileur.RegisterResponse, Taileur.APIError&gt;) -&gt; () in Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
-                  moduleName = "Taileur"
+                  symbolName = "closure #1 (Swift.Result&lt;OrijinTailor.RegisterResponse, OrijinTailor.APIError&gt;) -&gt; () in OrijinTailor.OnBoardViewModelImpl.registerUserAPICall((OrijinTailor.RegisterResponse) -&gt; (), (OrijinTailor.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "OrijinTailor"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
-                  offsetFromSymbolStart = "220">
+                  offsetFromSymbolStart = "274">
                </Location>
                <Location
-                  uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE - b06a172d47b2c79e"
+                  uuid = "2798E0F8-EB29-4557-9555-35EBDF3767EE - 4e2b8cb43ba025b1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Taileur.RegisterResponse, Taileur.APIError&gt;) -&gt; () in Taileur.OnBoardViewModelImpl.registerUserAPICall((Taileur.RegisterResponse) -&gt; (), (Taileur.APIError) -&gt; ()) -&gt; ()"
-                  moduleName = "Taileur"
+                  symbolName = "closure #1 (Swift.Result&lt;OrijinTailor.RegisterResponse, OrijinTailor.APIError&gt;) -&gt; () in OrijinTailor.OnBoardViewModelImpl.registerUserAPICall((OrijinTailor.RegisterResponse) -&gt; (), (OrijinTailor.APIError) -&gt; ()) -&gt; ()"
+                  moduleName = "OrijinTailor"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/engineer144/IOSProjects/Taileur/Taileur/AppModules/OnBoardingModule/viewModels/OnBoardViewModelImpl.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
-                  offsetFromSymbolStart = "320">
+                  offsetFromSymbolStart = "402">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -262,6 +262,22 @@
             endingLineNumber = "53"
             landmarkName = "registerUserAPICall(_:_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8D2F2B8-5C34-40EB-B2D2-51D2EFE39D54"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Taileur/AppModules/UserProfileModule/UserProfileSubView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "bottomTableView"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

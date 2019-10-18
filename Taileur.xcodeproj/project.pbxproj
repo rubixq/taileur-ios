@@ -42,6 +42,7 @@
 		4866C5162326412E007A6803 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C5152326412E007A6803 /* HomeViewController.swift */; };
 		4866C5182326413E007A6803 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C5172326413E007A6803 /* ShoppingViewController.swift */; };
 		4866C51A2326414C007A6803 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866C5192326414C007A6803 /* UserProfileViewController.swift */; };
+		48866CF32359D0A800FC1B8F /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48866CF22359D0A800FC1B8F /* ReviewsViewController.swift */; };
 		48B90A7A2353C56200A31353 /* OnBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B90A792353C56200A31353 /* OnBoardViewModel.swift */; };
 		48B90A7C2353C5B000A31353 /* OnBoardViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B90A7B2353C5B000A31353 /* OnBoardViewModelImpl.swift */; };
 		48B90A7E2353C62800A31353 /* OnboardRequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B90A7D2353C62800A31353 /* OnboardRequestParameter.swift */; };
@@ -127,6 +128,7 @@
 		4866C5152326412E007A6803 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4866C5172326413E007A6803 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		4866C5192326414C007A6803 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		48866CF22359D0A800FC1B8F /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
 		48B90A792353C56200A31353 /* OnBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewModel.swift; sourceTree = "<group>"; };
 		48B90A7B2353C5B000A31353 /* OnBoardViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewModelImpl.swift; sourceTree = "<group>"; };
 		48B90A7D2353C62800A31353 /* OnboardRequestParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardRequestParameter.swift; sourceTree = "<group>"; };
@@ -144,7 +146,7 @@
 		48CB06BF232BCEFF008CF4C2 /* GenericCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionView.swift; sourceTree = "<group>"; };
 		48CB06C4232BE056008CF4C2 /* MiddleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleCell.swift; sourceTree = "<group>"; };
 		48CB06C6232BE070008CF4C2 /* TopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCell.swift; sourceTree = "<group>"; };
-		48F52E4022F9776400D07E2E /* Taileur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taileur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F52E4022F9776400D07E2E /* OrijinTailor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrijinTailor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52E4322F9776400D07E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52E4B22F9776400D07E2E /* Taileur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taileur.xcdatamodel; sourceTree = "<group>"; };
 		48F52E4D22F9776600D07E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -206,7 +208,6 @@
 		4804B26123165B0A00247511 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4866C51423264114007A6803 /* Explore */,
 				485CE4152317AE9300AB2CFB /* BottomSliderComponent */,
 				485CE4142317ADD500AB2CFB /* LaunchComponent */,
 			);
@@ -337,25 +338,27 @@
 			isa = PBXGroup;
 			children = (
 				48CB06C1232BE015008CF4C2 /* HomeComponent */,
-				48829D5E232A3566000D2B47 /* UserProfileComponent */,
 				4866C51223264097007A6803 /* ExploreTabViewController.swift */,
 				4866C5172326413E007A6803 /* ShoppingViewController.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
 		};
-		48829D5E232A3566000D2B47 /* UserProfileComponent */ = {
+		48829D5E232A3566000D2B47 /* UserProfileModule */ = {
 			isa = PBXGroup;
 			children = (
 				4866C5192326414C007A6803 /* UserProfileViewController.swift */,
 				4818D8F22326FCC900218435 /* UserProfileSubView.swift */,
+				48866CF22359D0A800FC1B8F /* ReviewsViewController.swift */,
 			);
-			path = UserProfileComponent;
+			path = UserProfileModule;
 			sourceTree = "<group>";
 		};
 		48B90A732353C4C800A31353 /* AppModules */ = {
 			isa = PBXGroup;
 			children = (
+				48829D5E232A3566000D2B47 /* UserProfileModule */,
+				4866C51423264114007A6803 /* Explore */,
 				485CE41D2317C48600AB2CFB /* OnBoardingModule */,
 			);
 			path = AppModules;
@@ -476,7 +479,7 @@
 		48F52E4122F9776400D07E2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48F52E4022F9776400D07E2E /* Taileur.app */,
+				48F52E4022F9776400D07E2E /* OrijinTailor.app */,
 				48F52E5722F9776600D07E2E /* TaileurTests.xctest */,
 				48F52E6222F9776600D07E2E /* TaileurUITests.xctest */,
 			);
@@ -561,7 +564,7 @@
 			);
 			name = Taileur;
 			productName = Taileur;
-			productReference = 48F52E4022F9776400D07E2E /* Taileur.app */;
+			productReference = 48F52E4022F9776400D07E2E /* OrijinTailor.app */;
 			productType = "com.apple.product-type.application";
 		};
 		48F52E5622F9776600D07E2E /* TaileurTests */ = {
@@ -808,6 +811,7 @@
 				48CB06C5232BE056008CF4C2 /* MiddleCell.swift in Sources */,
 				48B90A832353CBF500A31353 /* String+Extensions.swift in Sources */,
 				4866C5182326413E007A6803 /* ShoppingViewController.swift in Sources */,
+				48866CF32359D0A800FC1B8F /* ReviewsViewController.swift in Sources */,
 				4866C50C2326399F007A6803 /* ActivityIndicator.swift in Sources */,
 				485CE4172317AEB100AB2CFB /* BottomSliderViewController.swift in Sources */,
 				4866C50F23263B26007A6803 /* UsersData.swift in Sources */,
@@ -979,14 +983,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				DEVELOPMENT_TEAM = N99R38R7F8;
 				INFOPLIST_FILE = Taileur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Taileur;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrijinTailor;
+				PRODUCT_NAME = OrijinTailor;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -998,14 +1002,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				DEVELOPMENT_TEAM = N99R38R7F8;
 				INFOPLIST_FILE = Taileur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Taileur;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OrijinTailor;
+				PRODUCT_NAME = OrijinTailor;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.backgroundColor = .white
-	  window?.rootViewController = UINavigationController(rootViewController: LaunchViewController())
+	    window?.rootViewController = UINavigationController(rootViewController: LaunchViewController())
 		window?.makeKeyAndVisible()
 		IQKeyboardManager.shared.enable = true
 		return true
